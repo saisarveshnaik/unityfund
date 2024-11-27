@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'JakartaMedium';
+  src: url('./fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaSemiBold';
+  src: url('./fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JakartaBold';
+  src: url('./fonts/PlusJakartaSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DiaClone';
+  src: url('./fonts/diaclone.ttf') format('truetype');
+}
+
+
+body {
+    margin: 0;
+    font-family: 'JakartaMedium', sans-serif;
+    background-color: #03030b;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .cont{
+    max-width: 1600px;
+    margin: 0 auto;
+  }

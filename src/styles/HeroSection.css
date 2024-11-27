@@ -1,0 +1,118 @@
+.banner-outer{
+    min-height: 1043px;
+    background-image: url("../images/banner.png"); /* The image used */
+    background-color: #03030b; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    position: relative;
+}
+
+.welcome-pill{
+    background: rgba(6.93, 0, 32.94, 0.35);
+    padding: 8px 70px 4px 70px;
+    border-radius: 40px;
+    border: 1px #394A8B solid;
+    margin: 0 auto;
+    position: absolute;
+    top: 26%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.welcome-pill h2{
+    font-family: 'JakartaMedium', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    word-wrap: break-word;
+}
+
+.banner-outer h1{
+    font-family: 'DiaClone', sans-serif;
+    font-size: 142px;
+    text-align: center;
+    color: white;
+    font-weight: 400; 
+    word-wrap: break-word;
+    width: 18ch;
+    line-height: 140px;
+    margin: 0 auto;
+    position: absolute;
+    top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.banner-outer p{
+    font-size: 34px;
+    text-align: center;
+    color: #ADADAD; 
+    width: 55ch ;
+    line-height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.banner-outer .btn-div{
+    position: absolute;
+    top: 78%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+.banner-outer .discover-btn{
+    font-size: 29px;
+    font-family: 'JakartaSemiBold', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    word-wrap: break-word;
+    width: 330px;
+    padding: 15px;
+    background: linear-gradient(103deg, #4B5EFC 0%, #1740D1 100%);
+    border-radius: 14.05px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-right: 30px;
+}
+
+.banner-outer .learn-btn{
+    font-size: 29px;
+    font-family: 'JakartaSemiBold', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    word-wrap: break-word;
+    width: 330px;
+    padding: 15px;
+    background: #3A3D63;
+    border-radius: 14.05px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+/* Responsice Css */
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+
+    .banner-outer .discover-btn{
+        width: 300px;
+    }
+    
+    .banner-outer .learn-btn{
+        width: 300px;
+    }
+
+}

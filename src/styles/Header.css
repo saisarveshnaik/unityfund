@@ -1,0 +1,85 @@
+.navbar{
+background: #03030b !important;
+padding-top: 30px;
+}
+
+.navbar li a{
+    color: white !important;
+    font-size: 25px;
+    font-family: 'JakartaMedium', sans-serif;
+    font-weight: 500; 
+    word-wrap: break-word;
+    margin-right: 20px;
+}
+
+.navbar .app-logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.navbar .line{
+    width: 1px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.navbar .input-div{
+    position: relative;
+}
+
+.navbar .input-div .search-icon{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.navbar .input-div .search{
+    font-size: 20px;
+    font-family: 'JakartaMedium', sans-serif;
+    font-weight: 500;
+    color: #3A3A4A;
+    background-color: #0F0F1B;
+    border: none;
+    max-width: 409px; 
+    padding: 30px 60px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.navbar .blog-btn{
+    font-size: 20px;
+    font-family: 'JakartaSemiBold', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    word-wrap: break-word;
+    width: 207.21px;
+    padding: 15px;
+    background: linear-gradient(103deg, #4B5EFC 0%, #1740D1 100%);
+    border-radius: 14.05px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-right: 25px;
+}
+
+.navbar .explore-btn{
+    font-size: 20px;
+    font-family: 'JakartaSemiBold', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    word-wrap: break-word;
+    width: 207.21px;
+    padding: 15px;
+    background: #3A3D63;
+    border-radius: 14.05px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}

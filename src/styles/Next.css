@@ -1,0 +1,79 @@
+.next-outer{
+   padding-bottom: 200px; 
+   background: linear-gradient(360deg, #002207 0%, black 100%);
+}
+
+.next{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.next h1{
+    font-family: 'DiaClone', sans-serif;
+    font-size: 87px;
+    font-weight: 400; 
+    word-wrap: break-word;
+    color: white; 
+}
+
+.next p{
+    font-family: 'JakartaMedium', sans-serif;
+    color: #5B6183;
+    font-size: 22px;
+    line-height: 29px;
+    width: 50ch;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.next .row{
+    margin-top: 130px;
+}
+
+.next .row .left{
+    padding-right: 50px;
+}
+
+.next .row .right{
+    padding-left: 50px;
+}
+
+.next .inner{
+    position: relative;
+    background: rgba(22.62, 22.62, 41.44, 0.50);
+    border-radius: 12.93px;
+    border: 1.20px rgba(255, 255, 255, 0.40) solid;
+    padding: 35px 40px 40px 240px;
+    min-height: 250px ;
+}
+
+.next .inner .next-img{
+    position: absolute;
+    width: 240px;
+    height: 340px;
+    object-fit: cover;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+}
+
+.next .inner h2{
+    font-family: 'JakartaBold', sans-serif;
+    font-size: 33px; 
+    font-weight: 700;
+    line-height: 52px;
+    color: #9F9FFF;
+    text-align: left;
+}
+
+.next .inner p{
+    font-family: 'JakartaMedium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #D5D5D6;
+    text-align: left;
+    width: auto;
+    line-height: 21px;
+}

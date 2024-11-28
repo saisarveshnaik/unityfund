@@ -1,0 +1,121 @@
+.inside-outer{
+    background-image: url("../images/inside-bg.png"); /* The image used */
+    background-color: #03030b; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.inside{
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+.inside h1{
+    font-family: 'DiaClone', sans-serif;
+    font-size: 87px;
+    font-weight: 400; 
+    word-wrap: break-word;
+    color: white; 
+}
+
+.inside p{
+    font-family: 'JakartaMedium', sans-serif;
+    color: #8E8E8E;
+    font-size: 22px;
+    line-height: 29px;
+    width: 50ch;
+}
+
+.inside .row{
+    margin-top: 70px;
+}
+
+.inside .left{
+  padding-right: 15px;
+}
+
+.inside .right{
+    padding-left: 15px;
+  }
+
+.inside .big{
+    position: relative;
+    border-radius: 15px;
+}  
+
+.inside .big .big-bg{
+   width: 100%;
+   position: relative;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+   height: 500px;
+}
+
+.inside .big h2{
+    position: absolute;
+    color: white; 
+    font-size: 30px;
+    font-family: 'JakartaSemiBold', sans-serif;
+    width: 30ch;
+    left: 25%;
+    bottom: 18%;
+}
+
+.inside .big p{
+    position: absolute;
+    color: #8E8E8E; 
+    font-size: 16px;
+    line-height: 22px;
+    left: 25%;
+    bottom: 4%;
+}
+
+.inside .big .big-small{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    border-radius: 0px 15px 0px 15px;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.inside .small{
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}  
+
+.inside .small .small-bg{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 240px;
+ }
+
+ .inside .small .small-small{
+    position: absolute;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    border-radius: 0px 15px 0px 15px;
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+ }
+
+ .inside .small h3{
+    font-family: 'JakartaSemiBold', sans-serif;
+    position: absolute;
+    color: white; 
+    font-size: 20px;
+    font-weight: 700;
+    width: 25ch;
+    left: 25%;
+    bottom: 10%;
+ }

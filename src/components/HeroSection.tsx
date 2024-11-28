@@ -1,11 +1,21 @@
 import React from 'react';
 import '../styles/HeroSection.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-const Header: React.FC = () => {
+const HeroSection: React.FC = () => {
+   
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1400, // Animation duration in milliseconds
+      offset: 100,   // Trigger offset in pixels
+    });
+  }, []);
+
   return (
     
-   <div className='banner-outer'>
-        <div className='welcome-pill'>
+   <div className='banner-outer' data-aos="fade-up">
+        <div className='welcome-pill' >
           <h2>Welcome to Panda Gaming Studios!</h2>
         </div>
         <h1>BUILDING THE FUTURE OF GAMING</h1>
@@ -20,4 +30,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default HeroSection;

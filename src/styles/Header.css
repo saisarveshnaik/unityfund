@@ -83,3 +83,42 @@ padding-top: 30px;
     align-items: center;
     border: none;
 }
+
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    .navbar{
+        padding-top: 10px;
+        }
+    
+    .navbar .line{
+        display: none;
+    }    
+
+    .navbar .app-logo{
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .navbar .input-div{
+        margin-top: 10px;
+    }
+
+    .navbar .input-div .search{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .navbar .blog-btn{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .navbar .explore-btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}

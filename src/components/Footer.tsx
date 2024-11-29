@@ -18,7 +18,7 @@ const Header: React.FC = () => {
                 <p>A leading game development outsourcing studio whose expertise spans domains such as Unity, Unreal, Al,
                 AR/VR, Concept art, 3D modeling, animation, etc</p>
                 </div>
-                <div className='col-md-2'>
+                <div className='col-md-2 col-6'>
                     <h2>Product</h2>
                     <ul>
                         <li>Home</li>
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                         <li>About</li>
                     </ul>
                 </div>
-                <div className='col-md-2'>
+                <div className='col-md-2 col-6'>
                 <h2>Services</h2>
                     <ul>
                         <li>Game Development</li>
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
                         <li>Metaverse</li>
                     </ul>
                 </div>
-                <div className='col-md-2'>
+                <div className='col-md-2 col-12'>
                 <h2>Legal</h2>
                     <ul>
                         <li>Privacy Policy</li>

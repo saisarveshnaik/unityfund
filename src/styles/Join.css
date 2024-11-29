@@ -65,3 +65,47 @@
 .join .inner .contact-btn:hover {
     transform: scale(1.1); /* Optional hover effect */
 }
+
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    .join{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .join .panda-img{
+        width: 70%;
+    }
+
+    .join .inner{
+        border-radius: 20px;
+        padding: 30px 10px 20px 10px;
+        margin-top: -30px;
+    }
+
+    .join .inner h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    
+    .join .inner p{
+        font-size: 16px;
+        line-height: 22px;
+        width: auto;
+    }
+
+    .join .inner .contact-btn{
+        font-size: 16px;
+        padding: 8px 4px;
+        width: 100%;
+        margin-right: 0px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+}

@@ -125,3 +125,68 @@
     }
 
 }
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+     
+    .banner-outer{
+        min-height: 200px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .welcome-pill{
+        padding: 6px 10px 1px 10px;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        width: auto;
+    }
+
+    .welcome-pill h2{
+        font-size: 14px;
+    }
+
+    .banner-outer h1{
+        font-size: 50px;
+        line-height: 52px;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .banner-outer p{
+        font-size: 16px;
+        line-height: 22px;
+        width: auto ;
+        position: relative;
+        margin-top: -15px;
+    }
+
+    .banner-outer .btn-div{
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .banner-outer .discover-btn{
+        font-size: 16px;
+        width: 100%;
+        padding: 8px 4px;
+        border-radius: 10px;
+        margin-right: 0px;
+        
+    }
+
+    .banner-outer .learn-btn{
+        font-size: 16px;
+        width: 100%;
+        padding: 8px 4px;
+        border-radius: 10px;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+}

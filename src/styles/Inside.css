@@ -119,3 +119,85 @@
     left: 25%;
     bottom: 10%;
  }
+
+
+
+ @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    .inside{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .inside h1{
+        font-size: 45px;
+    }
+
+    .inside p{
+        font-size: 16px;
+        line-height: 22px;
+        width: auto;
+    }
+
+    .inside .row{
+        margin-top: 40px;
+    }
+
+    .inside .big .big-bg{
+        margin-bottom: 30px;
+        height: 420px;
+     }
+
+     .inside .big h2{
+        font-size: 25px;
+        line-height: 32px;
+        width: auto;
+        left: 30px;
+        top: 180px;
+    }
+    
+    .inside .big p{
+        font-size: 16px;
+        line-height: 22px;
+        left: 30px;
+        top: 285px;
+        width: 22ch;
+    }
+     
+    .inside .big .big-small{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        border-radius: 15px 0px 15px 0px;
+        width: 100px;
+        height: 150px;
+    }
+
+    
+    .inside .small .small-bg{
+        min-height: 200px;
+     }
+    
+     .inside .small .small-small{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        border-radius: 15px 0px 15px 0px;
+        width: 80px;
+        height: 120px;
+        object-fit: cover;
+     }
+    
+     .inside .small h3{
+        font-size: 16px;
+        line-height: 22px;
+        width: auto;
+        left: 30px;
+        top: 150px;
+     }
+    
+    
+
+ }

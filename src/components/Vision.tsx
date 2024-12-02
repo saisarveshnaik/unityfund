@@ -15,7 +15,7 @@ const Vision: React.FC = () => {
     
   return (
     
-   <div className='cont vision'>
+   <div className='cont vision' id='vision'>
      <h1 data-aos="fade-up">OUR VISION:</h1>
      <h2 data-aos="fade-up">PAVING THE WAY FOR FUTURE OF GAMING</h2>
      <p data-aos="fade-up">At GamingPanda Studios, we are driven by a bold vision to transform the gaming landscape and place India at the forefront of the global gaming industry. Here’s how we plan to achieve it :</p>

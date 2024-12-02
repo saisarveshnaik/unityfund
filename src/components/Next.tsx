@@ -18,7 +18,7 @@ const Next: React.FC = () => {
   return (
     
     <div className='next-outer'>
-   <div className='cont next'>
+   <div className='cont next' id='next'>
      <h1 data-aos="fade-up">WHAT'S NEXT AT GAMING PANDA</h1>
      <p data-aos="fade-up">We’re excited to announce the development of PlantGame, our first major launch as a product-based company. Dive into a lush, interactive world where strategy meets adventure.</p>
       

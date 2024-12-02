@@ -17,7 +17,7 @@ const Inside: React.FC = () => {
   return (
     
     <div className='inside-outer'>
-   <div className='cont inside'>
+   <div className='cont inside' id='blogs'>
          
    <h1 data-aos="fade-up">INSIDE THE WORLD OF GAMING</h1>
    <p data-aos="fade-up">GamingPanda Studios is a top-notch game development studio offering consistently superior services to clients.</p>

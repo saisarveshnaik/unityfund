@@ -25,6 +25,9 @@ body {
     background-color: #03030b;
     color: #fff;
   }
+
+  html { scroll-behavior: smooth; }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -33,4 +36,11 @@ body {
   .cont{
     max-width: 1320px;
     margin: 0 auto;
+  }
+
+  @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+    .cont{
+      max-width: 100%;
+      width: 100%;
+    }
   }

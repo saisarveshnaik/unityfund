@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
         worlds that captivate and inspire.</p>
         <div className='btn-div'>
         <button className='discover-btn'>Discover Games</button>
-        <button className='learn-btn'>Learn More</button>
+        <a href='#next'><button className='learn-btn'>Learn More</button></a>
         </div>
    </div>
 

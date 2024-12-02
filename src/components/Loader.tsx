@@ -18,7 +18,18 @@ const Loader: React.FC = () => {
           <div className="loader-content">
             <img src={logo} className="panda-logo" alt="panda-logo" data-aos="zoom-in" />
             <br/>
-            <div className="spinner"></div>
+            {/* <div className="spinner"></div> */}
+
+            <h1 className="">Gaming Panda</h1>
+
+            <div className="containerrr">
+            <div className="loading">
+            <div className="percent">
+            <div className="progress"></div>
+            </div>
+           </div>
+           </div>
+
           </div>
         </div>
     );

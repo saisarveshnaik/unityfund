@@ -85,6 +85,61 @@ padding-top: 30px;
 }
 
 
+.modal-content {
+    background-color: #040B23;
+    color: #fff;
+  }
+  
+  .modal-header .close {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .modal-body .form-control {
+    background-color: #04040B;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .modal-body .form-control::placeholder {
+    color: #bbb;
+  }
+  
+  .modal-body .form-label {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .modal-footer .btn {
+    background-color: #04040B;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .modal-footer .btn:hover {
+    background-color: #040B23;
+    border-color: #040B23;
+    color: #fff;
+  }
+  
+  .modal-footer .btn[type="submit"] {
+    background-color: #040B23;
+    border: none;
+  }
+  
+  .modal-footer .btn[type="submit"]:hover {
+    background-color: #06204C;
+  }
+  
+  .row .form-control[type="file"] {
+    color: #fff;
+  }
+  
+  .modal {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+
 
 @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
 

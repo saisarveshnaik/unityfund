@@ -6,6 +6,8 @@
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+
+
 .inside{
     padding-top: 150px;
     padding-bottom: 120px;
@@ -58,7 +60,7 @@
     color: white; 
     font-size: 30px;
     font-family: 'JakartaSemiBold', sans-serif;
-    width: 30ch;
+    width: 24ch;
     left: 25%;
     bottom: 18%;
 }
@@ -117,7 +119,7 @@
     font-weight: 700;
     width: 25ch;
     left: 25%;
-    bottom: 10%;
+    bottom: 18%;
  }
 
 

@@ -5,6 +5,7 @@ import Loader from "./components/Loader";
 
 // IMPORTING PAGES HERE //
 import Home from './pages/Home';
+import Blog from './pages/Blog';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Cookie from './pages/Cookie';
@@ -41,6 +42,7 @@ const App: React.FC = () => {
       <LoaderWrapper>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/terms-and-conditions" element={<Terms />} />
           <Route path="/cookie-policy" element={<Cookie />} />

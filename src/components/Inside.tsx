@@ -22,7 +22,7 @@ const Inside: React.FC = () => {
     // Fetch blogs data from API
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('http://api.gamingpandastudios.com/api/fetch_blogs.php');
+        const response = await fetch('https://api.gamingpandastudios.com/api/fetch_blogs.php');
         const data = await response.json();
 
         console.log('Fetched Blogs:', data); // Log the fetched data to inspect its structure
@@ -59,7 +59,7 @@ const Inside: React.FC = () => {
                 <img src="/images/inside_1.jpg" className='big-bg' alt="big-bg" />
                 <h2>{bigBlog.blog_title}</h2>
                 <p>GamingPanda Studios is a top-notch game development studio offering consistently superior services to clients.</p>
-                <img src={`http://localhost/gamingpanda_admin/api/${bigBlog.blog_image}`} className='big-small' alt="game-img" />
+                <img src={`https://api.gamingpandastudios.com/api/${bigBlog.blog_image}`} className='big-small' alt="game-img" />
               </div>
               </Link>
             )}
@@ -70,7 +70,7 @@ const Inside: React.FC = () => {
                 <Link to={`/blog?blog_id=${blog.blog_id}`}>
                 <img src="/images/inside_2.jpg" className='small-bg' alt="big-bg" />
                 <h3>{blog.blog_title}</h3>
-                <img src={`http://localhost/gamingpanda_admin/api/${blog.blog_image}`} className='small-small' alt="game-img" />
+                <img src={`https://api.gamingpandastudios.com/api/${blog.blog_image}`} className='small-small' alt="game-img" />
                 </Link>
               </div>
             ))}

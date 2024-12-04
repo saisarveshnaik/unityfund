@@ -8,9 +8,78 @@ import join from '../images/form-img.jpg';
 
 const Header: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    location: '',
+    designation: '',
+    cv: null,
+    cover: ''
+  });
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const toggleModal = () => {
     setShowModal(!showModal);
+  };
+
+  const handleClick = (e: React.MouseEvent, targetId: string) => {
+    e.preventDefault(); // Prevent the default behavior (reloading)
+
+    const section = document.getElementById(targetId);
+
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section
+    }
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [id]: value
+    }));
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, files } = e.target;
+    if (files) {
+      setFormData(prevState => ({
+        ...prevState,
+        [id]: files[0]
+      }));
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const form = new FormData();
+    form.append('name', formData.name);
+    form.append('email', formData.email);
+    form.append('location', formData.location);
+    form.append('designation', formData.designation);
+    form.append('cv', formData.cv!);
+    form.append('cover', formData.cover);
+
+    try {
+      const response = await fetch('http://api.gamingpandastudios.com/api/join_us.php', {
+        method: 'POST',
+        body: form
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setSuccessMessage(data.message);
+        setErrorMessage('');
+      } else {
+        setErrorMessage(data.message);
+        setSuccessMessage('');
+      }
+    } catch (error) {
+      setErrorMessage('An error occurred while submitting the form.');
+      setSuccessMessage('');
+    }
   };
 
   return (
@@ -37,17 +106,17 @@ const Header: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto ml-auto">
             <li className="nav-item">
-              <a href="#vision" className="nav-link">
+              <a href="#vision" className="nav-link" onClick={(e) => handleClick(e, 'vision')}>
                 Our Vision
               </a>
             </li>
             <li className="nav-item">
-              <a href="#next" className="nav-link">
+              <a href="#next" className="nav-link" onClick={(e) => handleClick(e, 'next')}>
                 Upcoming Games
               </a>
             </li>
             <li className="nav-item">
-              <a href="#legacy" className="nav-link">
+              <a href="#legacy" className="nav-link" onClick={(e) => handleClick(e, 'legacy')}>
                 Our Legacy
               </a>
             </li>
@@ -55,7 +124,7 @@ const Header: React.FC = () => {
               <a className="nav-link">Roadmap</a>
             </li>
             <li className="nav-item">
-              <a href="#blogs" className="nav-link">
+              <a href="#blogs" className="nav-link" onClick={(e) => handleClick(e, 'blogs')}>
                 Blogs
               </a>
             </li>
@@ -81,78 +150,106 @@ const Header: React.FC = () => {
           className="modal fade show d-block"
           tabIndex={-1}
           role="dialog"
-          style={{ zIndex: 9999, display: 'block', paddingRight: '17px' }}
-          id="exampleModal"
+          style={{ zIndex: 9999, display: 'block', paddingRight: '20px', paddingLeft: '20px' }}
+          id="FormModal"
         >
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              {/* <div className="modal-header">
-                <h5 className="modal-title">Join Us</h5>
-                <button
-                  type="button"
-                  className="close"
-                  onClick={toggleModal}
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div> */}
               <div className="modal-body">
 
                 <div className='row'>
-                  <div className='col-md-5'>
+                  <div className='col-md-5 left'>
+                    <img src={join} className="join-img" alt="logo" />
+                  </div>
+                  <div className='col-md-7 right'>
+
+                    <h2>Join Us Now</h2>
+
+                    <form onSubmit={handleSubmit}>
+                      <div className="row">
+                        <div className="col-md-6 mb-3 mt-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="name"
+                            placeholder="Enter your name"
+                            value={formData.name}
+                            onChange={handleInputChange}
+                          />
+                        </div>
+                        <div className="col-md-6 mb-3 mt-3">
+                          <input
+                            type="email"
+                            className="form-control"
+                            id="email"
+                            placeholder="Enter your email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                          />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-6 mb-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="location"
+                            placeholder="Enter your location"
+                            value={formData.location}
+                            onChange={handleInputChange}
+                          />
+                        </div>
+                        <div className="col-md-6 mb-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="designation"
+                            placeholder="Enter your designation"
+                            value={formData.designation}
+                            onChange={handleInputChange}
+                          />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-12 mb-3">
+                          <input
+                            type="file"
+                            className="form-control"
+                            id="cv"
+                            onChange={handleFileChange}
+                          />
+                        </div>
+                        <div className="col-md-12 mb-3">
+                          <textarea
+                            className="form-control"
+                            id="cover"
+                            rows={6}
+                            placeholder="Write your cover letter"
+                            value={formData.cover}
+                            onChange={handleInputChange}
+                          ></textarea>
+                        </div>
+                      </div>
+                      <p>Your information is safe. Learn our <Link to="/privacy-policy"><a>Privacy Policy</a></Link></p>
+
+                      
+
+                      <div className="modal-footer">
+                      {errorMessage && <p style={{ color: 'red', fontWeight: 'bold' }}>{errorMessage}</p>}
+                      {successMessage && <p style={{ color: 'green', fontWeight: 'bold' }}>{successMessage}</p>}
+                        <button type="button" id='close-btn' className="btn btn-secondary" onClick={toggleModal}>
+                          Close
+                        </button>
+                        <button type="submit" id='submit-btn' className="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+
                     
+
                   </div>
-                  <div className='col-md-7'></div>
                 </div>
-
-                <form>
-                  <div className="row mb-2">
-                    <div className="col-md-6">
-                      <label htmlFor="name" className="form-label">Name</label>
-                      <input type="text" className="form-control" id="name" placeholder="Enter your name" />
-                    </div>
-                    <div className="col-md-6">
-                      <label htmlFor="email" className="form-label">Email ID</label>
-                      <input type="email" className="form-control" id="email" placeholder="Enter your email" />
-                    </div>
-                  </div>
-                  <div className="row mb-1">
-                    <div className="col-md-6">
-                      <label htmlFor="location" className="form-label">Location</label>
-                      <input type="text" className="form-control" id="location" placeholder="Enter your location" />
-                    </div>
-                    <div className="col-md-6">
-                      <label htmlFor="designation" className="form-label">Designation</label>
-                      <input type="text" className="form-control" id="designation" placeholder="Enter your designation" />
-                    </div>
-                  </div>
-                  <div className="row mb-3">
-                    <div className="col-md-12">
-                      <label htmlFor="cv" className="form-label">Upload CV</label>
-                      <input type="file" className="form-control" id="cv" />
-                    </div>
-                    <div className="col-md-12">
-                      <label htmlFor="coverLetter" className="form-label">Cover Letter</label>
-                      <textarea
-                        className="form-control"
-                        id="coverLetter"
-                        rows={1}
-                        placeholder="Write your cover letter"
-                      ></textarea>
-                    </div>
-                  </div>
-                </form>
-
-
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={toggleModal}>
-                  Close
-                </button>
-                <button type="submit" className="btn btn-primary">
-                  Submit
-                </button>
               </div>
             </div>
           </div>

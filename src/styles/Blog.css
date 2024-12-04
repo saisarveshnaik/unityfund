@@ -24,6 +24,50 @@
     margin-top: 50px;
 }
 
+.content h2{
+   font-size: 30px;
+   line-height: 40px;
+}
+
+.content h3{
+    font-size: 25px;
+    line-height: 30px;
+ }
+
+.toc {
+    position: sticky;
+    top: 20px;
+    padding: 20px 30px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(360deg, #091849 0%, black 100%);
+    margin-top: 40px;
+}
+
+.toc h5{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
 
 @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
     
@@ -41,5 +85,9 @@
         margin-top: 20px;
     }
     
+    .content{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
 }

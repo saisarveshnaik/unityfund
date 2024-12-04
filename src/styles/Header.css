@@ -66,6 +66,12 @@ padding-top: 30px;
     align-items: center;
     border: none;
     margin-right: 20px;
+    transition: 1s;
+}
+
+.navbar .blog-btn:hover{
+    background: linear-gradient(103deg, #050D29 0%, #000001 100%);
+    border: 1px solid #ffffff;
 }
 
 .navbar .explore-btn{
@@ -84,59 +90,14 @@ padding-top: 30px;
     border: none;
 }
 
-
-.modal-content {
-    background-color: #040B23;
-    color: #fff;
+#exampleModal .modal-dialog {
+    min-width: 60%;
+    border-radius: 1vw;
   }
   
-  .modal-header .close {
-    color: #fff;
-    font-size: 1.5rem;
-  }
-  
-  .modal-body .form-control {
-    background-color: #04040B;
-    color: #fff;
-    border: 1px solid #fff;
-  }
-  
-  .modal-body .form-control::placeholder {
-    color: #bbb;
-  }
-  
-  .modal-body .form-label {
-    color: #fff;
-    font-weight: 500;
-  }
-  
-  .modal-footer .btn {
-    background-color: #04040B;
-    color: #fff;
-    border: 1px solid #fff;
-  }
-  
-  .modal-footer .btn:hover {
-    background-color: #040B23;
-    border-color: #040B23;
-    color: #fff;
-  }
-  
-  .modal-footer .btn[type="submit"] {
-    background-color: #040B23;
-    border: none;
-  }
-  
-  .modal-footer .btn[type="submit"]:hover {
-    background-color: #06204C;
-  }
-  
-  .row .form-control[type="file"] {
-    color: #fff;
-  }
-  
-  .modal {
-    background-color: rgba(0, 0, 0, 0.5);
+  #exampleModal .modal-body {
+    padding: 0vw;
+    border-radius: 1vw;
   }
 
 
@@ -175,5 +136,12 @@ padding-top: 30px;
         width: 100%;
         margin-top: 10px;
     }
+
+    #exampleModal .modal-dialog {
+      max-width: 500px;
+      margin: 1.75rem auto;
+  }
+
+
 
 }

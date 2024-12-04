@@ -4,6 +4,7 @@ import '../styles/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import logo from '../images/gaming_panda_logo.png';
 import line from '../images/line.png';
+import join from '../images/form-img.jpg';
 
 const Header: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -34,7 +35,7 @@ const Header: React.FC = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto ml-auto">
             <li className="nav-item">
               <a href="#vision" className="nav-link">
                 Our Vision
@@ -68,7 +69,7 @@ const Header: React.FC = () => {
               className="blog-btn"
               onClick={toggleModal}
             >
-              Join Us
+              Join Our Team
             </button>
           </form>
         </div>
@@ -80,11 +81,12 @@ const Header: React.FC = () => {
           className="modal fade show d-block"
           tabIndex={-1}
           role="dialog"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+          style={{ zIndex: 9999, display: 'block', paddingRight: '17px' }}
+          id="exampleModal"
         >
           <div className="modal-dialog" role="document">
             <div className="modal-content">
-              <div className="modal-header">
+              {/* <div className="modal-header">
                 <h5 className="modal-title">Join Us</h5>
                 <button
                   type="button"
@@ -94,10 +96,18 @@ const Header: React.FC = () => {
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
-              </div>
+              </div> */}
               <div className="modal-body">
+
+                <div className='row'>
+                  <div className='col-md-5'>
+                    
+                  </div>
+                  <div className='col-md-7'></div>
+                </div>
+
                 <form>
-                  <div className="row mb-3">
+                  <div className="row mb-2">
                     <div className="col-md-6">
                       <label htmlFor="name" className="form-label">Name</label>
                       <input type="text" className="form-control" id="name" placeholder="Enter your name" />
@@ -107,7 +117,7 @@ const Header: React.FC = () => {
                       <input type="email" className="form-control" id="email" placeholder="Enter your email" />
                     </div>
                   </div>
-                  <div className="row mb-3">
+                  <div className="row mb-1">
                     <div className="col-md-6">
                       <label htmlFor="location" className="form-label">Location</label>
                       <input type="text" className="form-control" id="location" placeholder="Enter your location" />
@@ -118,11 +128,11 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                   <div className="row mb-3">
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <label htmlFor="cv" className="form-label">Upload CV</label>
                       <input type="file" className="form-control" id="cv" />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <label htmlFor="coverLetter" className="form-label">Cover Letter</label>
                       <textarea
                         className="form-control"
@@ -133,6 +143,8 @@ const Header: React.FC = () => {
                     </div>
                   </div>
                 </form>
+
+
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={toggleModal}>

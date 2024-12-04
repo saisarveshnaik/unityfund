@@ -34,7 +34,7 @@ const Blog: React.FC = () => {
             }
 
             try {
-                const response = await fetch(`http://localhost/gamingpanda_admin/pages/fetch_blogs.php?blog_id=${blog_id}`);
+                const response = await fetch(`http://api.gamingpandastudios.com/api/fetch_blogs.php?blog_id=${blog_id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch the blog');
                 }

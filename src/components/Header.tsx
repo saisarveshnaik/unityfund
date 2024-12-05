@@ -123,11 +123,13 @@ const Header: React.FC = () => {
             <li className="nav-item">
               <a className="nav-link">Roadmap</a>
             </li>
+            <Link to="/blogs">
             <li className="nav-item">
-              <a href="#blogs" className="nav-link" onClick={(e) => handleClick(e, 'blogs')}>
+              <a href="#" className="nav-link" >
                 Blogs
               </a>
             </li>
+            </Link>
             <li className="nav-item">
               <a className="nav-link">Explore More</a>
             </li>

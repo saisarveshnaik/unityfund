@@ -93,8 +93,9 @@ padding-top: 30px;
 #FormModal .modal-content{
     border-radius: 15px 15px 15px 15px;
     margin-top: 100px;
-    background: linear-gradient(360deg, #091849 0%, black 100%);
+    background: linear-gradient(180deg, #141723 0%, #070913 99%);
     border: 2px solid #091849;
+    padding: 8px;
 }
 
 #FormModal .modal-dialog {
@@ -108,9 +109,9 @@ padding-top: 30px;
 
   #FormModal .join-img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 15px 15px 15px;
   }  
 
   #FormModal .right{
@@ -126,17 +127,18 @@ padding-top: 30px;
     width: 100%;
     height: 50px;
     padding-left: 20px;
-    border: 1px solid #dde9f6;
+    border: none;
     color: #ffffff !important;
     font-size: 18px;
     border-radius: 2vw;
-    background: linear-gradient(360deg, #091849 0%, black 100%);
+    background: black;
 }
 
 #FormModal .right textarea {
-    background: linear-gradient(360deg, #091849 0%, black 100%);
+    background: black;
     border-radius: 1vw;
     color: #ffffff;
+    border: none;
 }
 
 

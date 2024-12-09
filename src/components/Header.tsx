@@ -4,7 +4,7 @@ import '../styles/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import logo from '../images/gaming_panda_logo.png';
 import line from '../images/line.png';
-import join from '../images/form-img.jpg';
+import join from '../images/form-img.png';
 
 const Header: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -163,9 +163,9 @@ const Header: React.FC = () => {
                   <div className='col-md-5 left'>
                     <img src={join} className="join-img" alt="logo" />
                   </div>
-                  <div className='col-md-7 right'>
+                  <div className='col-md-7 right text-center'>
 
-                    <h2>Join Us Now</h2>
+                    <h2>Lets Work Together</h2>
 
                     <form onSubmit={handleSubmit}>
                       <div className="row">

@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import AOS from 'aos';
 import panda from '../images/join-panda.png';
-import join from '../images/form-img.jpg';
+import join from '../images/form-img.png';
 
 const Join: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -92,7 +92,7 @@ const Join: React.FC = () => {
                   </div>
                   <div className="col-md-7 right">
 
-                    <h2>Join Us Now</h2>
+                    <h2>Lets Work Together</h2>
 
                     <form onSubmit={handleFormSubmit}>
                       <div className="row">

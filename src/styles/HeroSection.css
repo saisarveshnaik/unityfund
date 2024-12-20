@@ -1,6 +1,6 @@
 .banner-outer{
     min-height: 1030px;
-    background-image: url("../images/banner.png"); /* The image used */
+    background-image: var(--banner-bg-image);
     background-color: #03030b; /* Used if the image is unavailable */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -133,13 +133,13 @@
         min-height: 200px;
         padding-left: 30px;
         padding-right: 30px;
+        padding-top: 50px;
     }
 
     .welcome-pill{
         padding: 6px 10px 1px 10px;
         border-radius: 40px;
         margin: 0 auto;
-        margin-top: 50px;
         position: relative;
         width: auto;
     }

@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../styles/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import logo from '../images/gaming_panda_logo.png';
+import sun from '../images/sun.png';
+import moon from '../images/moon.png';
 import line from '../images/line.png';
 import join from '../images/form-img.png';
 
 const Header: React.FC = () => {
+  
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -63,7 +76,7 @@ const Header: React.FC = () => {
     form.append('cover', formData.cover);
 
     try {
-      const response = await fetch('http://api.gamingpandastudios.com/api/join_us.php', {
+      const response = await fetch('https://apigaming.imetatech.io/join_us.php', {
         method: 'POST',
         body: form
       });
@@ -143,6 +156,18 @@ const Header: React.FC = () => {
               Join Our Team
             </button>
           </form>
+          <div className="theme-toggler">
+          <img src={sun} className="sun" alt="logo" onClick={toggleTheme} />
+            <label className="switch">
+              <input
+                type="checkbox"
+                onChange={toggleTheme}
+                checked={theme === 'dark'}
+              />
+              <span className="slider round"></span>
+            </label>
+            <img src={moon} className="moon" alt="logo" onClick={toggleTheme} />
+          </div>
         </div>
       </nav>
 
@@ -232,6 +257,7 @@ const Header: React.FC = () => {
                           ></textarea>
                         </div>
                       </div>
+
                       <p>Your information is safe. Learn our <Link to="/privacy-policy"><a>Privacy Policy</a></Link></p>
 
                       

@@ -9,7 +9,7 @@
     font-size: 87px;
     font-weight: 400; 
     word-wrap: break-word;
-    color: white; 
+    color: var(--text-color); 
 }
 
 .legacy p{
@@ -42,7 +42,7 @@
 
 .legacy h2{
     text-align: center; 
-    color: #E8E8E8; 
+    color: var(--text-color); 
     font-size: 30px;
     font-weight: 700; 
     line-height: 50px;

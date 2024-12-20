@@ -18,29 +18,124 @@
   src: url('./fonts/diaclone.ttf') format('truetype');
 }
 
+html { scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cont{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+  .cont{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.theme-toggler{
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  background: var(--text-color) !important;
+  border-radius: 50px;
+}
+
+.theme-toggler .sun{
+  position: absolute;
+  width: 20px;
+  left: 10px;
+}
+
+.theme-toggler .moon{
+  position: absolute;
+  width: 20px;
+  right: 10px;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+
+  /* Default (light mode) */
+[data-theme="light"] {
+  --bg-color: #E8F6FF;
+  --text-color: #03030b;
+  --navbar-bg: #E8F6FF;
+  --popup-bg: linear-gradient(180deg, #E8F6FF 0%, #A8D7FF 99%);
+  --popup-border: #000000;
+  --banner-bg-image: url("images/banner.png");
+  --green-bg-color: linear-gradient(360deg, #C8E6C9 0%, #E8F5E9  100%);
+  --blue-bg-color: linear-gradient(360deg, #A8D7FF  0%, #A8D7FF  100%);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg-color: #03030b;
+  --text-color: #ffffff;
+  --navbar-bg: #03030b;
+  --popup-bg: linear-gradient(180deg, #141723 0%, #070913 99%);
+  --popup-border: #000000;
+  --banner-bg-image: url("images/banner.png");
+  --green-bg-color: linear-gradient(360deg, #002207 0%, black 100%);
+  --blue-bg-color: linear-gradient(360deg, #091849 0%, black 100%);
+}
+
 
 body {
-    margin: 0;
-    font-family: 'JakartaMedium', sans-serif;
-    background-color: #03030b;
-    color: #fff;
-  }
+  margin: 0;
+  font-family: 'JakartaMedium', sans-serif;
+  background-color: var(--bg-color);
+}
 
-  html { scroll-behavior: smooth; }
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 
-  .cont{
-    max-width: 1320px;
-    margin: 0 auto;
-  }
 
-  @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
-    .cont{
-      max-width: 100%;
-      width: 100%;
-    }
-  }

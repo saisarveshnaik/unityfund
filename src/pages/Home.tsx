@@ -18,8 +18,8 @@ const Home: React.FC = () => {
         <div className="">
             <Header />
             <HeroSection />
-              <Vision />
               <Legacy />
+              <Vision />
               <Next />
               {/* <Shaping /> */}
               <Journey />

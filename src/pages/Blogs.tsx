@@ -20,7 +20,7 @@ const Blogs: React.FC = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('https://api.gamingpandastudios.com/api/fetch_blogs.php');
+        const response = await fetch('https://apigaming.imetatech.io/fetch_blogs.php');
         const data = await response.json();
 
         if (Array.isArray(data)) {
@@ -57,7 +57,7 @@ const Blogs: React.FC = () => {
               <div key={blog.blog_id} className="col-md-4 outer">
                 <Link to={`/blog?blog_id=${blog.blog_id}`}>
                 <div className="item">
-                  <img src={`https://api.gamingpandastudios.com/api/${blog.blog_image}`} alt={blog.blog_title} className="blog_img" />
+                  <img src={`https://imetatech.io/api_gamingpanda/${blog.blog_image}`} alt={blog.blog_title} className="blog_img" />
                   <div className="inner">
                       <h3>{blog.blog_title}</h3>
                       <p className="blog_learn_more">

@@ -15,7 +15,7 @@
     font-size: 87px;
     font-weight: 400; 
     word-wrap: break-word;
-    color: white; 
+    color: var(--text-color); 
 }
 
 .journey .text-div{

@@ -1,11 +1,11 @@
 .join-outer{
-    background: linear-gradient(360deg, #091849 0%, black 100%);
+    background: var(--blue-bg-color)
 }
 
 .join{
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 180px;
+    padding-bottom: 140px;
 }
 
 .join .panda-img{

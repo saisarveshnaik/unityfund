@@ -15,6 +15,7 @@ const Vision: React.FC = () => {
     
   return (
     
+   <div className='vision-outer'>
    <div className='cont vision' id='vision'>
      <h1 data-aos="fade-up">OUR VISION:</h1>
      <h2 data-aos="fade-up">PAVING THE WAY FOR FUTURE OF GAMING</h2>
@@ -60,7 +61,8 @@ const Vision: React.FC = () => {
      </div> 
 
    </div>
-
+   </div> 
+   
   );
 };
 

@@ -41,7 +41,7 @@ const Join: React.FC = () => {
     formData.append('cv', cv);
     formData.append('cover', cover);
 
-    const response = await fetch('http://api.gamingpandastudios.com/api/join_us.php', {
+    const response = await fetch('https://apigaming.imetatech.io/join_us.php', {
       method: 'POST',
       body: formData,
     });

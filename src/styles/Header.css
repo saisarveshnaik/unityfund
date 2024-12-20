@@ -1,11 +1,11 @@
 .navbar{
-background: #03030b !important;
+background: var(--navbar-bg) !important;
 padding-top: 30px;
 }
 
 .navbar li a{
-    color: white !important;
-    font-size: 20px;
+    color: var(--text-color) !important;
+    font-size: 18px;
     font-family: 'JakartaMedium', sans-serif;
     font-weight: 500; 
     word-wrap: break-word;
@@ -58,8 +58,8 @@ padding-top: 30px;
     text-align: center;
     font-weight: 600;
     word-wrap: break-word;
-    width: 200px;
-    padding: 10px;
+    width: auto;
+    padding: 10px 20px;
     background: linear-gradient(103deg, #4B5EFC 0%, #1740D1 100%);
     border-radius: 10px;
     justify-content: center;
@@ -93,7 +93,7 @@ padding-top: 30px;
 #FormModal .modal-content{
     border-radius: 15px 15px 15px 15px;
     margin-top: 100px;
-    background: linear-gradient(180deg, #141723 0%, #070913 99%);
+    background: var(--popup-bg);
     border: 2px solid #091849;
     padding: 8px;
 }
@@ -119,6 +119,7 @@ padding-top: 30px;
   }
 
   #FormModal .right h2{
+    color: var(--text-color);
     font-family: 'DiaClone', sans-serif;
     font-size: 60px;
   }
@@ -127,18 +128,22 @@ padding-top: 30px;
     width: 100%;
     height: 50px;
     padding-left: 20px;
-    border: none;
-    color: #ffffff !important;
+    border: 1px solid var(--popup-border);
+    color: var(--text-color) !important;
     font-size: 18px;
     border-radius: 2vw;
-    background: black;
+    background: var(--bg-color);
 }
 
 #FormModal .right textarea {
-    background: black;
+    background: var(--bg-color);
     border-radius: 1vw;
-    color: #ffffff;
-    border: none;
+    color: var(--text-color);
+    border: 1px solid var(--popup-border);
+}
+
+#FormModal .right p{
+    color: var(--text-color);
 }
 
 

@@ -36,7 +36,7 @@ const Blog: React.FC = () => {
 
       try {
         const response = await fetch(
-          `https://api.gamingpandastudios.com/api/fetch_blogs.php?blog_id=${blog_id}`
+          `https://apigaming.imetatech.io/fetch_blogs.php?blog_id=${blog_id}`
         );
         if (!response.ok) {
           throw new Error('Failed to fetch the blog');
@@ -119,7 +119,7 @@ const Blog: React.FC = () => {
           <div className="row">
             <div className="col-md-4">
               <img
-                src={`https://api.gamingpandastudios.com/api/${blog.blog_image}`}
+                src={`https://apigaming.imetatech.io/${blog.blog_image}`}
                 className="blog-img"
                 alt={blog.blog_title}
               />

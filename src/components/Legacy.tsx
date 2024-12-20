@@ -17,7 +17,7 @@ const Legacy: React.FC = () => {
   }, []);
 
   return (
-    
+  <div className='legacy-outer'>
    <div className='cont legacy' id='legacy'>
      <h1 data-aos="fade-up">OUR GAMING LEGACY</h1>
      <p data-aos="fade-up">Our expertise spans a variety of gaming genres and platforms. From hyper-casual mobile games to immersive virtual worlds, we take pride in delivering experiences that entertain and engage millions.</p>
@@ -42,6 +42,7 @@ const Legacy: React.FC = () => {
       </div>
 
    </div>
+   </div>  
 
   );
 };

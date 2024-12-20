@@ -1,6 +1,6 @@
 .next-outer{
    padding-bottom: 200px; 
-   background: linear-gradient(360deg, #002207 0%, black 100%);
+   background: var(--green-bg-color);
 }
 
 .next{
@@ -14,7 +14,7 @@
     font-size: 87px;
     font-weight: 400; 
     word-wrap: break-word;
-    color: white; 
+    color: var(--text-color); 
 }
 
 .next p{

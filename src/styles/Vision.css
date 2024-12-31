@@ -48,7 +48,7 @@
     padding-right: 50px;
     background: var(--popup-bg);
     border-radius: 15px;
-    border: 2.46px #24293A solid; 
+    border: var(--card-border); 
     align-items: center; 
     min-height: 340px;
 }
@@ -58,7 +58,7 @@
     height: 125px; 
     background: var(--popup-bg);
     border-radius: 50%;
-    border: 1.86px #2B2F48 solid;
+    border: var(--card-border); 
     position: relative;
     margin: 0 auto;
     margin-top: -160px;

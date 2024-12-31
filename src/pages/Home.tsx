@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Terms.css';
 import Header from '../components/Header';
+import Banner from '../components/Banner';
 import HeroSection from '../components/HeroSection';
 import Vision from '../components/Vision';
 import Legacy from '../components/Legacy';
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
     return (
         <div className="">
             <Header />
-            <HeroSection />
+            <Banner />
               <Legacy />
               <Vision />
               <Next />

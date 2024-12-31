@@ -1,5 +1,5 @@
 footer{
-    background: var(--popup-bg);
+    background: #04040B;
     padding: 80px 10px 30px 10px;
 }
 
@@ -11,7 +11,7 @@ footer .footer-logo{
 footer p{
     margin-top: 25px;
     opacity: 0.80; 
-    color: var(--text-color); 
+    color: #ffffff; 
     font-size: 18px;
     font-weight: 600;
     width: 35ch;
@@ -19,7 +19,7 @@ footer p{
 
 footer h2{
     font-family: 'JakartaSemiBold', sans-serif;
-    color: var(--text-color);
+    color: #ffffff;
     font-size: 20px;
     margin-bottom: 25px;
 }
@@ -32,7 +32,7 @@ footer ul li{
     margin-left: -40px;
     margin-top: 20px;
     opacity: 0.80; 
-    color: var(--text-color);
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -78,7 +78,6 @@ footer .btn-div{
     
     footer h2{
         font-family: 'JakartaSemiBold', sans-serif;
-        color: white; 
         font-size: 18px;
         margin-bottom: 25px;
     }

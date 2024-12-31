@@ -1,15 +1,15 @@
 .inside-outer{
-    background-image: url("../images/inside-bg.png"); /* The image used */
-    background-color: #03030b; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    /* background-image: url("../images/inside-bg.png"); */
+    background-color: var(--bg-color); /* Used if the image is unavailable */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 
 
 .inside{
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -18,12 +18,12 @@
     font-size: 87px;
     font-weight: 400; 
     word-wrap: break-word;
-    color: white; 
+    color: var(--text-color); 
 }
 
 .inside p{
     font-family: 'JakartaMedium', sans-serif;
-    color: #8E8E8E;
+    color: #5b6183;
     font-size: 22px;
     line-height: 29px;
     width: 50ch;

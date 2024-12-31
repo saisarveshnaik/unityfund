@@ -1,5 +1,5 @@
 .journey{
-    padding-top: 150px;
+    padding-top: 80px;
     padding-bottom: 120px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .journey .text-div{
-    background: linear-gradient(90deg, #4B0003 0%, #03030B 100%); 
+    background: var(--journey-text-bg);
     border-radius: 15px;  
     padding: 40px 40px 30px 40px;
     margin-top: 30px;
@@ -30,7 +30,7 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 27px;
-    color: #F6E2E3;
+    color: var(--text-color);
     text-align: left;
     width: 40ch;
 }

@@ -3,6 +3,10 @@ import '../styles/Vision.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import graph from '../images/graph.svg';
+import v1 from '../images/v1.svg';
+import v2 from '../images/v2.svg';
+import v3 from '../images/v3.svg';
+import v4 from '../images/v4.svg';
 
 const Vision: React.FC = () => {
 
@@ -25,7 +29,7 @@ const Vision: React.FC = () => {
         <div className='col-md-6 left'>
             <div className='inner' data-aos="zoom-in">
                 <div className='circle'>
-                <img src={graph} className="graph-icon" alt="graph-icon" />
+                <img src={v1} className="graph-icon" alt="graph-icon" />
                 </div>
                 <h3>Innovation Beyond Boundaries</h3>
                 <p>We aim to redefine gaming experiences by blending creativity with cutting-edge technology. From casual mobile games to immersive AAA titles, we are committed to delivering products that push the boundaries of what gaming can achieve.</p>
@@ -34,7 +38,7 @@ const Vision: React.FC = () => {
         <div className='col-md-6 right'>
             <div className='inner' data-aos="zoom-in">
             <div className='circle'>
-            <img src={graph} className="graph-icon" alt="graph-icon" />
+            <img src={v2} className="graph-icon" alt="graph-icon" />
             </div>
             <h3>Empowering India’s Gaming Ecosystem</h3>
             <p>Our mission is to establish India as a gaming powerhouse by nurturing homegrown talent, building world-class games, and fostering a community of passionate players and developers.</p>
@@ -43,7 +47,7 @@ const Vision: React.FC = () => {
         <div className='col-md-6 left'>
             <div className='inner' data-aos="zoom-in">
                 <div className='circle'>
-                <img src={graph} className="graph-icon" alt="graph-icon" />
+                <img src={v3} className="graph-icon" alt="graph-icon" />
                 </div>
                 <h3>The Future of Gaming Hardware</h3>
                 <p>As part of our vision, we plan to innovate not just in games but also in gaming hardware. From developing consoles tailored for Indian gamers to creating tools that elevate the gaming experience, we are determined to shape the future of interactive entertainment.</p>
@@ -52,7 +56,7 @@ const Vision: React.FC = () => {
         <div className='col-md-6 right'>
             <div className='inner' data-aos="zoom-in">
             <div className='circle'>
-            <img src={graph} className="graph-icon" alt="graph-icon" />
+            <img src={v4} className="graph-icon" alt="graph-icon" />
             </div>
             <h3>Building a Global Gaming Legacy</h3>
             <p>With the launch of our flagship product, PlantGame, we are laying the foundation for a legacy of world-class games. This is just the beginning as we strive to create a gaming studio that resonates globally while staying rooted in India’s unique cultural identity.</p>

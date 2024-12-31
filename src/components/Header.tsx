@@ -3,8 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import '../styles/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 import logo from '../images/gaming_panda_logo.png';
-import sun from '../images/sun.png';
-import moon from '../images/moon.png';
+import sun from '../images/light.svg';
+import moon from '../images/dark.svg';
 import line from '../images/line.png';
 import join from '../images/form-img.png';
 
@@ -16,9 +16,19 @@ const Header: React.FC = () => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  // const toggleTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  // };
+
+  const toggleLight = () => {
+    setTheme((prevTheme) => (prevTheme = 'light' ));
   };
+
+  const toggleDark = () => {
+    setTheme((prevTheme) => (prevTheme = 'dark' ));
+  };
+
+  
 
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -157,16 +167,16 @@ const Header: React.FC = () => {
             </button>
           </form>
           <div className="theme-toggler">
-          <img src={sun} className="sun" alt="logo" onClick={toggleTheme} />
-            <label className="switch">
+          <img src={sun} className="sun" alt="logo" onClick={toggleLight} />
+            {/* <label className="switch">
               <input
                 type="checkbox"
                 onChange={toggleTheme}
                 checked={theme === 'dark'}
               />
               <span className="slider round"></span>
-            </label>
-            <img src={moon} className="moon" alt="logo" onClick={toggleTheme} />
+            </label> */}
+            <img src={moon} className="moon" alt="logo" onClick={toggleDark} />
           </div>
         </div>
       </nav>

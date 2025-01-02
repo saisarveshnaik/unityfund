@@ -24,14 +24,14 @@ const Next: React.FC = () => {
       
       <div className='row'>
         <div className='col-md-6 left'>
-            <div className='inner' data-aos="fade-left">
+            <div className='inner' data-aos="fade-up">
             <img src={next1} className="next-img" alt="game-img" />  
             <h2>Plant Game</h2>
             <p>Our expertise spans a variety of gaming genres and platforms. From hyper-casual mobile games to immersive virtual worlds, we take pride in delivering experiences that entertain and engage millions.</p>
             </div>
         </div>
         <div className='col-md-6 right'>
-        <div className='inner' data-aos="fade-left">
+        <div className='inner' data-aos="fade-up">
             <img src={next2} className="next-img" alt="game-img" />  
             <h2>Ori : Blind Forest</h2>
             <p>Our expertise spans a variety of gaming genres and platforms. From hyper-casual mobile games to immersive virtual worlds, we take pride in delivering experiences that entertain and engage millions.</p>

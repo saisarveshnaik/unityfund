@@ -143,9 +143,9 @@ const Header: React.FC = () => {
                 Our Legacy
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link">Roadmap</a>
-            </li>
+            </li> */}
             <Link to="/blogs">
             <li className="nav-item">
               <a href="#" className="nav-link" >
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
             </li>
             </Link>
             <li className="nav-item">
-              <a className="nav-link">Explore More</a>
+              <a href='vision' className="nav-link" onClick={(e) => handleClick(e, 'vision')}>Explore More</a>
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
@@ -226,7 +226,7 @@ const Header: React.FC = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-6 mb-3">
+                        <div className="col-md-6 col-6 mb-3">
                           <input
                             type="text"
                             className="form-control"
@@ -236,7 +236,7 @@ const Header: React.FC = () => {
                             onChange={handleInputChange}
                           />
                         </div>
-                        <div className="col-md-6 mb-3">
+                        <div className="col-md-6 col-6 mb-3">
                           <input
                             type="text"
                             className="form-control"
@@ -260,7 +260,7 @@ const Header: React.FC = () => {
                           <textarea
                             className="form-control"
                             id="cover"
-                            rows={6}
+                            rows={3}
                             placeholder="Write your cover letter"
                             value={formData.cover}
                             onChange={handleInputChange}

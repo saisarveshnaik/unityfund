@@ -29,7 +29,7 @@ const Journey: React.FC = () => {
         </div>
         <div className='col-md-7'>
             <h1 data-aos="fade-up">FOLLOW OUR JOURNEY</h1>
-            <div className='text-div' data-aos="fade-left">
+            <div className='text-div' data-aos="fade-up">
                 <p>Get an exclusive behind-the-scenes look at how GamingPanda Studios is shaping the future of gaming. Subscribe to our channel and join us as we work toward becoming India’s biggest gaming studio.</p>
             </div>
             <button onClick={handleButtonClick} className='watch-btn' data-aos="fade-up"><img src={youtube} className="youtube" alt="youtube-icon" /> Watch Now</button>

@@ -201,6 +201,10 @@ padding-top: 30px;
       margin: 1.75rem auto;
   }
 
+  #FormModal .modal-content {
+    margin-top: 20px;
+  }
+
   #FormModal .left{
    display: none;
   }
@@ -209,7 +213,14 @@ padding-top: 30px;
     padding: 30px 30px 0px 30px;
   }
 
+  #FormModal .right h2{
+    font-size: 30px;
+  }
 
+  #FormModal .right input {
+    height: 40px;
+    font-size: 14px;
+  }
 
 
 }

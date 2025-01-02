@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Banner.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -22,8 +23,11 @@ const Banner: React.FC = () => {
                 <h1>BUILDING THE FUTURE OF GAMING</h1>
                  <p>From casual games to immersive experiences, GamingPanda Studios creates 
                   worlds that captivate and inspire.</p>
-                  <button className='discover-btn'>Discover Games</button>
-                  <a href='#next'><button className='learn-btn'>Learn More</button></a>
+                  <a href='#next' onClick={(e) => {
+    e.preventDefault();
+    document.getElementById('next')?.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+  }}><button className='discover-btn'>Discover Games</button></a>
+                  <Link to="/blogs"><button className='learn-btn'>Learn More</button></Link>
                 </div>
                 <div className='col-md-4'>
                 <img src={viking} className="viking" alt="viking" />

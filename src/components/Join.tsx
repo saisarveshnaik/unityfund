@@ -90,7 +90,7 @@ const Join: React.FC = () => {
                   <div className="col-md-5 left">
                     <img src={join} className="join-img" alt="logo" />
                   </div>
-                  <div className="col-md-7 right">
+                  <div className="col-md-7 right text-center">
 
                     <h2>Lets Work Together</h2>
 
@@ -104,10 +104,10 @@ const Join: React.FC = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-6 mb-3">
+                        <div className="col-md-6 col-6 mb-3">
                           <input type="text" className="form-control" id="location" placeholder="Enter your location" required />
                         </div>
-                        <div className="col-md-6 mb-3">
+                        <div className="col-md-6 col-6 mb-3">
                           <input type="text" className="form-control" id="designation" placeholder="Enter your designation" required />
                         </div>
                       </div>

@@ -4,8 +4,9 @@ import { useNavigate, Link } from 'react-router-dom';
 import logo from '../images/footer_logo.png';
 import instagram from '../images/instagram.svg';
 import facebook from '../images/facebook.svg';
-import x from '../images/x.svg';
+import x from '../images/twitter.png';
 import linkedin from '../images/linkedin.svg';
+import youtube from '../images/youtube.png';
 
 
 const Header: React.FC = () => {
@@ -55,13 +56,15 @@ const Header: React.FC = () => {
             </div>
             
             <hr/>
-            <h2>© 2024 Gaming Panda Studios. All rights reserved.</h2>
+            <h2>© 2025 Gaming Panda Studios. All rights reserved.</h2>
             
             <div className='btn-div'>
-            <button><img src={instagram} className="social-icon" alt="instagram" /></button>
-            <button><img src={facebook} className="social-icon" alt="instagram" /></button>
-            <button><img src={x} className="social-icon" alt="instagram" /></button>
-            <button><img src={linkedin} className="social-icon" alt="instagram" /></button>
+            <a href='https://www.instagram.com/gamingpandastudio?igsh=cjUxZzRrNTdvdzA4' target='_blank'><button><img src={instagram} className="social-icon" alt="instagram" /></button></a>
+            <a href='https://x.com/gamingpandastu?s=21&t=4MfLqobBlLteSVJcH90AlQ' target='_blank'><button><img src={x} className="social-icon" alt="x" /></button></a>
+            <a href='https://www.youtube.com/@devsgameventure' target='_blank'><button><img src={youtube} className="social-icon" alt="youtube" /></button></a>
+            {/* <button><img src={facebook} className="social-icon" alt="facebook" /></button> */}
+            
+            {/* <button><img src={linkedin} className="social-icon" alt="linkedin" /></button> */}
             </div>
 
         </div>

@@ -49,12 +49,16 @@ a {
 .cont{
   max-width: 1320px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
   .cont{
     max-width: 100%;
     width: 100%;
+    padding-left: 0px;
+  padding-right: 0px;
   }
 }
 

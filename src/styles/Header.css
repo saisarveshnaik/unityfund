@@ -27,6 +27,16 @@
       letter-spacing: 2px;
       font-size: 14px;
     }
+
+    .navbar li button{
+      color: #ffffff !important;
+      font-weight: 600;
+      margin-right: 50px;
+      letter-spacing: 2px;
+      font-size: 14px;
+      background: transparent;
+      border: none;
+    }
     
     
     .navbar .join-btn{

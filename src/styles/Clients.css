@@ -1,0 +1,42 @@
+#Clients{
+	padding-top: 250px;
+	padding-bottom: 120px;
+}
+
+#Clients h2{
+	color: #FFFFFF;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -0.015em;
+}
+
+#owl1{
+	margin-top: 60px;
+}
+
+#owl1 img{
+	width: 60%;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 0 auto;
+}
+
+#owl1 img:hover{
+	transition: 1s;
+	opacity: 1;
+}
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    #Clients{
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    #owl1 img{
+        opacity: 1;
+    }
+
+  }

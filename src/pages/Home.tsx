@@ -1,32 +1,27 @@
 import React from 'react';
-import '../styles/Terms.css';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import HeroSection from '../components/HeroSection';
-import Vision from '../components/Vision';
-import Legacy from '../components/Legacy';
-import Next from '../components/Next';
-import Shaping from '../components/Shaping';
-import Journey from '../components/Journey';
-import Inside from '../components/Inside';
-import Join from '../components/Join';
+import Clients from '../components/Clients';
+import Why from '../components/Why';
+import Features from '../components/Features';
+import Possibilities from '../components/Possibilities';
+import Technology from '../components/Technology';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
-
 
     return (
         <div className="">
             <Header />
             <Banner />
-              <Legacy />
-              <Vision />
-              <Next />
-              {/* <Shaping /> */}
-              <Journey />
-              <Inside />
-              <Join />
-              <Footer />
+            <Clients />
+            <Why />
+            <Features />
+            <Possibilities />
+            <Technology />
+            <FAQ />
+            <Footer />
         </div>
     );
 };

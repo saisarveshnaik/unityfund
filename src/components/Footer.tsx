@@ -1,74 +1,51 @@
 import React from 'react';
 import '../styles/Footer.css';
 import { useNavigate, Link } from 'react-router-dom';
-import logo from '../images/footer_logo.png';
-import instagram from '../images/instagram.svg';
-import facebook from '../images/facebook.svg';
-import x from '../images/twitter.png';
-import linkedin from '../images/linkedin.svg';
-import youtube from '../images/youtube.png';
+
 
 
 const Header: React.FC = () => {
   return (
     
     <footer>
-        <div className='cont'>
-            <div className='row'>
-                <div className='col-md-6'>
-                <img src={logo} className="footer-logo" alt="fooer-logo" />
-                <p>A leading game development outsourcing studio whose expertise spans domains such as Unity, Unreal, Al,
-                AR/VR, Concept art, 3D modeling, animation, etc</p>
-                </div>
-                <div className='col-md-2 col-6'>
-                    <h2>Links</h2>
-                    <ul>
-                    <Link to="/">
-                        <li>Home</li>
-                    </Link>    
-                        <li>Service</li>
-                        <li>Pricing</li>
-                        <li>Blog</li>
-                        <li>About</li>
-                    </ul>
-                </div>
-                <div className='col-md-2 col-6'>
-                <h2>Products</h2>
-                    <ul>
-                        <li>Plant Game</li>
-                        <li>Treasure Hunt</li>
-                    </ul>
-                </div>
-                <div className='col-md-2 col-12'>
-                <h2>Legal</h2>
-                    <ul>
-                       <Link to="/privacy-policy">
-                        <li>Privacy Policy</li>
-                        </Link>
-                        <Link to="/terms-and-conditions">
-                        <li>Terms & Conditions</li>
-                        </Link>
-                        <Link to="/cookie-policy">
-                        <li>Cookie Policy</li>
-                        </Link>
-                    </ul>
-                </div>
-            </div>
-            
-            <hr/>
-            <h2>© 2025 Gaming Panda Studios. All rights reserved.</h2>
-            
-            <div className='btn-div'>
-            <a href='https://www.instagram.com/gamingpandastudio?igsh=cjUxZzRrNTdvdzA4' target='_blank'><button><img src={instagram} className="social-icon" alt="instagram" /></button></a>
-            <a href='https://x.com/gamingpandastu?s=21&t=4MfLqobBlLteSVJcH90AlQ' target='_blank'><button><img src={x} className="social-icon" alt="x" /></button></a>
-            <a href='https://www.youtube.com/@devsgameventure' target='_blank'><button><img src={youtube} className="social-icon" alt="youtube" /></button></a>
-            {/* <button><img src={facebook} className="social-icon" alt="facebook" /></button> */}
-            
-            {/* <button><img src={linkedin} className="social-icon" alt="linkedin" /></button> */}
-            </div>
+    
+	<img src="/images/feature-glaxy.png" className="bg" />
+	
+	<div className="cont">
+	<div className="row">
+		<div className="col-md-4">
+		<img src="/images/logo/unityfund_logo.png" className="footer-logo" />
+		<p className="info">UnityFund is a next-generation blockchain-powered platform revolutionizing crowdfunding and decentralized finance. Established in 2024, UnityFund is dedicated to empowering individuals and communities to achieve financial growth through innovation and trust in blockchain technology.</p>
+		
+	    <button className="social-icons"><img src="/images/icons/facebook.png" /></button>
+		<button className="social-icons"><img src="/images/icons/twitter.png" /></button>
+		<button className="social-icons"><img src="/images/icons/instagram.png" /></button>
+		<button className="social-icons"><img src="/images/icons/telegram.png" /></button>
 
-        </div>
-    </footer>
+	</div>
+		<div className="col-md-4 middle text-center">
+			<h2>CONTACT US</h2>
+			<p className="contactp">123, Dubai Marina, Dubai, UAE</p>
+			<p className="boldp">Call Us: +91-9876543210</p>
+			<p className="boldp">info@unityfund.com</p>
+
+			<p className="copyrightp">© 2025 UnityFund. All Rights Reserved.</p>
+		</div>
+		<div className="col-md-4 right">
+			<h2>SIGN UP FOR EMAIL UPDATES</h2>
+			<p className="info">Sign up with your email address to receive news and updates</p>
+            
+			<div className="input-div">
+				<input type="email" placeholder="Your Email Address" />
+				<button className="sub-btn">Subscribe</button>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+	</footer>
+
 
   );
 };

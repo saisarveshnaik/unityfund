@@ -147,7 +147,7 @@
     width: 0;
     height: 100%;
     border-radius: 20px;
-    background: linear-gradient(45deg, #22ffde, #2196f3);
+    background: linear-gradient(45deg, #1C00E1, #000105);
     animation: animate 1s ease-in-out infinite;
   }
   

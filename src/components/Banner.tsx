@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Banner.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import viking from '../images/viking.png';
 
 const Banner: React.FC = () => {
    
@@ -16,25 +14,28 @@ const Banner: React.FC = () => {
 
   return (
     
-   <div className='ban-outer' data-aos="fade-up">
-        <div className='cont ban'>
-            <div className='row'>
-                <div className='col-md-8'>
-                <h1>BUILDING THE FUTURE OF GAMING</h1>
-                 <p>From casual games to immersive experiences, GamingPanda Studios creates 
-                  worlds that captivate and inspire.</p>
-                  <a href='#next' onClick={(e) => {
-    e.preventDefault();
-    document.getElementById('next')?.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
-  }}><button className='discover-btn'>Discover Games</button></a>
-                  <Link to="/blogs"><button className='learn-btn'>Learn More</button></Link>
-                </div>
-                <div className='col-md-4'>
-                <img src={viking} className="viking" alt="viking" />
-                </div>
-            </div>
-        </div>
-   </div>
+    <section id="Main" data-aos="fade-up">
+    <img src="/images/feature-glaxy.png" className="bg-1" />
+    <img src="/images/left-shape.png" className="bg-2" />
+    <img src="/images/vector.png" className="bg-3" />
+    <div className="cont">
+    <h2>WELCOME TO</h2>
+    <h1>Unity Fund</h1>
+    
+    <div className="row">
+       <div className="col-md-6 violet-div">
+           <h3>Technology Meets Financial Freedom</h3>
+       </div>
+       <div className="col-md-6 right-div">
+           <p>The Future of Crowdfunding Meets the Power of Crypto.</p>
+           <button className="started-btn">Get Started Today</button>
+       </div>
+    </div>
+    
+    </div>
+    </section>
+
+   
 
   );
 };

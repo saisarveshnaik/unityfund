@@ -1,0 +1,165 @@
+#Technology{
+	position: relative;
+	padding-top: 140px;
+    padding-bottom: 140px;
+	background-color: transparent;
+    background-image: linear-gradient(180deg, #7136B8 0%, #010314 100%);
+}
+
+
+
+#Technology .bg-1{
+	position: absolute;
+   width: 250px;
+   top: 300px;
+   left: 0px;
+   animation: float 3s ease-in-out infinite;
+}
+
+#Technology .bg-2{
+	position: absolute;
+	right: 30px;
+	bottom: 300px;
+	width: 100px;
+	animation: float 3s ease-in-out infinite;
+ }
+
+ #Technology .bg-3{
+	width: 100px;
+	position: absolute;
+	bottom: 20px;
+	right: 500px;
+	animation: floatx 3s ease-in-out infinite;
+ }
+
+
+#Technology .cont{
+	background-image: url(video_bg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	border-radius: 30px 30px 30px 30px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+#Technology h2{
+	color: #DDDDDD !important;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+}
+
+#Technology h1{
+	color: #DDDDDD;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+    width: 15ch;
+    margin-top: 20px;
+}
+
+#Technology p{
+	color: #DDDDDD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62em;
+    margin-top: 25px;
+}
+
+#Technology .started-btn{
+	user-select: none;
+    -moz-user-select: none;
+    background: #FFFFFF none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    color: #010314;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.42px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 18px 45px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+#Technology .started-btn:hover{
+	color: #ffffff;
+	transition: 0.5s;
+	background: linear-gradient(82.3deg, #e275ff 10.8%, #5729d6 94.3%);
+}
+
+#Technology .right{
+	position: relative;
+}
+
+#Technology .right .play-btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: none;
+	font-family: "jakarta-bold", Sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	background: #e275ff;
+	color: #ffffff;
+}
+
+#Technology .right .play-btn:hover{
+	background: #ffffff;
+	color: #000000;
+	transition: 1s;
+}
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    #Technology {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #Technology .cont {
+        border-radius: 15px 15px 15px 15px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+        z-index: 100;
+    }
+    
+    #Technology h1 {
+        font-size: 36px;
+        width: 12ch;
+        margin-top: 15px;
+    }
+    
+    #Technology .right .play-btn {
+        position: relative;
+        top: 80px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+  }

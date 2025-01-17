@@ -1,226 +1,61 @@
-.navbar{
-background: var(--navbar-bg) !important;
-padding-top: 30px;
-}
-
-.navbar li a{
-    color: var(--text-color) !important;
-    font-size: 18px;
-    font-family: 'JakartaMedium', sans-serif;
-    font-weight: 500; 
-    word-wrap: break-word;
-    margin-right: 20px;
-}
-
-.navbar .app-logo{
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.navbar .line{
-    width: 1px;
-    height: auto;
-    margin-left: 15px;
-    margin-right: 10px;
-}
-
-.navbar .input-div{
-    position: relative;
-}
-
-.navbar .input-div .search-icon{
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    position: absolute;
-    top: 15px;
-    left: 25px;
-}
-
-.navbar .input-div .search{
-    font-size: 16px;
-    font-family: 'JakartaMedium', sans-serif;
-    font-weight: 500;
-    color: #3A3A4A;
-    background-color: #0F0F1B;
-    border: none;
-    max-width: 409px; 
-    padding: 25px 55px;
-    border-radius: 10px;
-    margin-left: 5px;
-}
-
-.navbar .blog-btn{
-    font-size: 16px;
-    font-family: 'JakartaSemiBold', sans-serif;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    word-wrap: break-word;
-    width: auto;
-    padding: 10px 20px;
-    background: linear-gradient(103deg, #4B5EFC 0%, #1740D1 100%);
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    margin-right: 20px;
-    transition: 1s;
-}
-
-.navbar .blog-btn:hover{
-    background: linear-gradient(103deg, #050D29 0%, #000001 100%);
-    border: 1px solid #ffffff;
-}
-
-.navbar .explore-btn{
-    font-size: 16px;
-    font-family: 'JakartaSemiBold', sans-serif;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    word-wrap: break-word;
-    width: 200px;
-    padding: 10px;
-    background: #3A3D63;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-#FormModal .modal-content{
-    border-radius: 15px 15px 15px 15px;
-    margin-top: 100px;
-    background: var(--popup-bg);
-    border: 2px solid #091849;
-    padding: 8px;
-}
-
-#FormModal .modal-dialog {
-    min-width: 1000px;
-    border-radius: 1vw;
-  }
-  
-  #FormModal .modal-body {
-    padding: 0vw;
+.sticky-navbar {
+	position: sticky;
+	top: 0;
+	z-index: 1000; /* Ensures it stays above other content */
   }
 
-  #FormModal .join-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 15px 15px;
-  }  
-
-  #FormModal .right{
-    padding: 30px 60px 0px 30px;
-  }
-
-  #FormModal .right h2{
-    color: var(--text-color);
-    font-family: 'DiaClone', sans-serif;
-    font-size: 60px;
-  }
-
-  #FormModal .right input {
-    width: 100%;
-    height: 50px;
-    padding-left: 20px;
-    border: 1px solid var(--popup-border);
-    color: var(--text-color) !important;
-    font-size: 18px;
-    border-radius: 2vw;
-    background: var(--bg-color);
-}
-
-#FormModal .right textarea {
-    background: var(--bg-color);
-    border-radius: 1vw;
-    color: var(--text-color);
-    border: 1px solid var(--popup-border);
-}
-
-#FormModal .right p{
-    color: var(--text-color);
-}
-
-
-#FormModal .modal-footer {
-  border-top: none;
-}
-
-#FormModal a{
-    text-decoration: underline;
-}
-
-
-@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+  .navbar.scrolled {
+    background-color: #0f101e !important; /* New background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    }
 
     .navbar{
-        padding-top: 10px;
-        }
+      padding: 20px 120px;
+      background-color:#010314 !important;
+      transition: background-color 0.3s ease-in-out;
+    }
     
-    .navbar .line{
-        display: none;
+    .navbar .navbar-logo{
+      width: 70px;
+      height: auto;
+    }
+    
+    .navbar li a{
+      color: #ffffff !important;
+      font-weight: 600;
+      margin-right: 50px;
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+    
+    
+    .navbar .join-btn{
+      font-size: 14px;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        color: #010314;
+        font-weight: 700;
+        gap: 12px;
+      padding: 14px 40px;
+        border-radius: 30px;
+      border: none;
+    }
+    
+    .navbar .join-btn:hover{
+      color: #ffffff;
+      transition: 0.5s;
+      background: linear-gradient(82.3deg, #e275ff 10.8%, #5729d6 94.3%);
     }    
 
-    .navbar .app-logo{
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
-    }
 
-    .navbar .input-div{
-        margin-top: 10px;
-    }
 
-    .navbar .input-div .search{
-        width: 100%;
-        margin-left: 0px;
-    }
+    @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
 
-    .navbar .blog-btn{
-        width: 100%;
-        margin-right: 0px;
-    }
-
-    .navbar .explore-btn{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    #FormModal .modal-dialog {
-        min-width: 100%;
-        border-radius: 1vw;
+ 
+      .navbar{
+          background-color:transparent !important;
+          padding: 10px 20px;
       }
 
-    #FormModal .modal-dialog {
-      max-width: 500px;
-      margin: 1.75rem auto;
-  }
-
-  #FormModal .modal-content {
-    margin-top: 20px;
-  }
-
-  #FormModal .left{
-   display: none;
-  }
-
-  #FormModal .right{
-    padding: 30px 30px 0px 30px;
-  }
-
-  #FormModal .right h2{
-    font-size: 30px;
-  }
-
-  #FormModal .right input {
-    height: 40px;
-    font-size: 14px;
-  }
-
-
-}
+    }

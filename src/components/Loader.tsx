@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Loader.css"; // Add styles for the loader
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import logo from '../images/gaming_panda_logo.png';
+
 
 const Loader: React.FC = () => {
 
@@ -16,11 +16,11 @@ const Loader: React.FC = () => {
     return (
         <div className="loader-container">
           <div className="loader-content">
-            <img src={logo} className="panda-logo" alt="panda-logo" data-aos="zoom-in" />
+            <img src="images/logo/unityfund_logo.png" className="panda-logo" alt="panda-logo" data-aos="zoom-in" />
             <br/>
             {/* <div className="spinner"></div> */}
 
-            <h1 className="">Gaming Panda</h1>
+            <h1 className="">Unityfund</h1>
 
             <div className="containerrr">
             <div className="loading">

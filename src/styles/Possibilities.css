@@ -1,0 +1,213 @@
+#Possibilities{
+	position: relative;
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+#Possibilities .bg-1{
+	position: absolute;
+	left: -40px;
+	bottom: 50px;
+  width: 200px;
+  animation: float 3s ease-in-out infinite;
+}
+
+#Possibilities .bg-2{
+	position: absolute;
+	width: 140px;
+	right: 200px;
+	top: 350px;
+	z-index: 10;
+  }
+
+  #Possibilities .bg-3{
+	position: absolute;
+	width: 200px;
+	right: 30px;
+	bottom: 50px;
+	animation: float 3s ease-in-out infinite;
+  }
+
+  
+
+#Possibilities h2{
+	font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #e275ff -18.55%, #5729d6 163.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Possibilities h1 {
+    color: #FFFFFF;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+#Possibilities p {
+    color: #92939E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62em;
+    margin-top: 15px;
+}
+
+
+#Possibilities .left{
+	padding-right: 50px;
+}
+
+#Possibilities .right{
+	padding-left: 50px;
+}
+
+#Possibilities .links{
+	color: #92939E;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: underline !important;
+    line-height: 1.62em;
+	margin-top: 50px;
+}
+
+#Possibilities .links a{
+	color: inherit;
+}
+
+#Possibilities .cont-inner{
+	position: relative;
+	background-color: transparent;
+    background-image: linear-gradient(180deg, #E5F8C6 0%, #61B998 100%);
+	border-radius: 30px 30px 30px 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+	margin-top: 50px;
+	z-index: 50;
+}
+
+#Possibilities .cont-inner .bitcoin-img{
+	width: 450px;
+	animation: float 3s ease-in-out infinite;
+}
+
+#Possibilities .cont-inner h2{
+	margin-top: 30px;
+	color: #000000 !important;
+	background-image: linear-gradient(180deg, #000000 0%, #000000 100%);
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+}
+
+#Possibilities .cont-inner h1{
+	color: #000000;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+    width: 15ch;
+    margin-top: 20px;
+}
+
+#Possibilities .cont-inner p{
+	color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62em;
+    margin-top: 25px;
+}
+
+#Possibilities .cont-inner .started-btn{
+	user-select: none;
+    -moz-user-select: none;
+    background: #FFFFFF none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    color: #010314;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.42px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 18px 45px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+#Possibilities .cont-inner .started-btn:hover{
+	color: #ffffff;
+	transition: 0.5s;
+	background: linear-gradient(82.3deg, #e275ff 10.8%, #5729d6 94.3%);
+}
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    #Possibilities{
+        padding-top: 0px;
+        padding-bottom: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #Possibilities h1 {
+        font-size: 36px;
+    }
+
+    #Possibilities .bg-2{
+     display: none;
+    }
+
+    #Possibilities .left{
+        padding-right: 15px;
+    }
+
+    #Possibilities .right {
+        padding-left: 15px;
+    }
+
+    #Possibilities .links {
+        font-size: 24px;
+        margin-top: 0px;
+    }
+
+    #Possibilities .cont-inner {
+        border-radius: 15px 15px 15px 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 50px;
+    }
+
+    #Possibilities .cont-inner .bitcoin-img{
+        width: 100%;
+    }
+
+    #Possibilities .cont-inner h2{
+        margin-top: 0px;
+    }
+    
+#Possibilities .cont-inner h1{
+    font-size: 36px;
+    margin-top: 15px;
+    max-width: 12ch;
+}
+
+  }

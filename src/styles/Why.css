@@ -1,0 +1,279 @@
+#Why{
+	padding-top: 20px;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+#Why .left{
+	padding-right: 25px;
+}
+
+#Why .right{
+	padding-left: 25px;
+}
+
+#Why .bg-1{
+	position: absolute;
+	width: 350px;
+	left: -50px;
+	top: 0px;
+	z-index: 10;
+}
+
+#Why .bg-2{
+	position: absolute;
+	width: 250px;
+	left: -90px;
+	top: 120px;
+	z-index: 20;
+	animation: float 3s ease-in-out infinite;
+}
+
+#Why .bg-3{
+	position: absolute;
+	width: 70px;
+	left: 120px;
+	top: 120px;
+	z-index: 30;
+	animation: floatx 3s ease-in-out infinite;
+}
+
+@keyframes floatx {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(-20px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+#Why .bg-4{
+	position: absolute;
+	width: 50px;
+	z-index: 30;
+	top: 320px;
+	left: 80px;
+	animation: float 3s ease-in-out infinite;
+}
+
+#Why h2{
+	font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #e275ff -18.55%, #5729d6 163.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Why h1{
+	color: #FFFFFF;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+#Why p{
+	color: #92939E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62em;
+	margin-top: 15px;
+}
+
+#Why .div1{
+	background-color: #13141E;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 65px;
+    padding-right: 65px;
+	margin-top: 50px;
+	min-height: 830px;
+	position: relative;
+}
+
+#Why .div1 img{
+	position: absolute;
+	width: 500px;
+	left: -100px;
+	bottom: 60px;
+	animation: float 3s ease-in-out infinite;
+}
+
+#Why h3{
+    font-family: "jakarta-bold", Sans-serif;
+	color: #FFFFFF;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+#Why .div1 p{
+	margin-top: 35px;
+}
+
+
+#Why .div1 li{
+	font-size: 18px;
+    font-weight: 400;
+    line-height: 1.62em;
+	color: #ffffff;
+}
+
+#Why .div2{
+	background-color: #13141E;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 65px;
+    padding-right: 65px;
+	margin-top: 50px;
+	position: relative;
+}
+
+#Why .div2 img{
+	width: 230px;
+	position: absolute;
+	right: -100px;
+	top: 100px;
+}
+
+#Why .div3{
+	background-color: #13141E;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 65px;
+    padding-right: 65px;
+	margin-top: 50px;
+	position: relative;
+}
+
+#Why .div3 img{
+	width: 230px;
+	position: absolute;
+	right: -100px;
+	top: 80px;
+}
+
+#Why .div1 ul, #Why .div2 ul {
+    list-style-type: none; /* Removes default list styles */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+#Why .div1 ul li, #Why .div2 ul li, #Why .div3 ul li {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1.62em !important;
+    color: #ffffff !important;
+    margin-bottom: 10px !important;
+}
+
+#Why .div2 li::before {
+    content: ''; /* You can add a custom bullet or icon here if needed */
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #ffffff; /* Custom bullet color */
+    border-radius: 50%; /* Makes it a circle */
+}
+
+
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    #Why{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #Why .left{
+        position: relative;
+        padding-right: 15px;
+        z-index: 100;
+    }
+    
+    #Why .right{
+        padding-left: 15px;
+    }
+
+    #Why h1{
+        font-size: 36px;
+        position: relative;
+    }
+
+    #Why p{
+        position: relative;
+        z-index: 100;
+    }
+
+    #Why .div1{
+        margin-top: 30px;
+        height: auto;
+        min-height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+
+    #Why h3{
+        font-size: 35px;
+    }
+
+    #Why .div1 p{
+        margin-top: 20px;
+    }
+
+    #Why .div1 img{
+        position: relative;
+        width: 300px;
+        margin-left: 80px;
+        margin-top: 80px;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    #Why .div2{
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #Why .div2 img{
+        width: 230px;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        margin-top: 20px;
+    }
+    
+    #Why .div3{
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #Why .div3 img{
+        width: 230px;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        margin-top: 20px;
+    }
+
+
+  }

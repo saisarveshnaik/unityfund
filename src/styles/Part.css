@@ -1,0 +1,109 @@
+#Part{
+	padding-top: 0px;
+}
+
+#Part .cont{
+	background-color: transparent;
+    background-image: linear-gradient(180deg, #E5F8C6 0%, #61B998 100%);
+	padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+	border-radius: 25px 25px 25px 25px;
+}
+
+#Part h1{
+	color: #000000;
+    font-family: "jakarta-bold", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2em;
+    width: 15ch;
+    margin-top: 20px;
+}
+
+#Part p{
+	color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62em;
+    margin-top: 20px;
+}
+
+#Part .started-btn{
+	user-select: none;
+    -moz-user-select: none;
+    background: #FFFFFF none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    color: #010314;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.42px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 18px 45px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+#Part .started-btn:hover{
+	color: #ffffff;
+	transition: 0.5s;
+	background: linear-gradient(82.3deg, #e275ff 10.8%, #5729d6 94.3%);
+}
+
+#Part .right{
+	position: relative;
+}
+
+#Part .coin-img{
+	width: 400px;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
+
+    #Part {
+        padding-top: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #Part .cont {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 15px 15px 15px 15px;
+    }
+    
+    #Part h1{
+        font-size: 36px;
+        width: 12ch;
+        margin-top: 20px;
+    }
+    
+    
+    #Part .coin-img{
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0%;
+        transform: translate(-0%,-0%);
+    }
+    
+  }

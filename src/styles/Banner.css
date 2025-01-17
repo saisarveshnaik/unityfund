@@ -1,120 +1,194 @@
-.ban-outer{
-    padding-top: 150px;
-    padding-bottom: 150px;
+#Main{
+	padding-top: 180px;
+	position: relative;
+	padding-top: 140px;
 }
 
-.ban h1{
-    font-family: 'DiaClone', sans-serif;
-    font-size: 136px;
-    color: var(--text-color);
-    font-weight: 400; 
-    word-wrap: break-word;
-    width: 18ch;
-    line-height: 135px;
+#Main h2{
+	font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+	background: linear-gradient(90deg, #e275ff -18.55%, #5729d6 163.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
-.ban p{
-    font-size: 29px;
-    color: #5B6183; 
-    line-height: 35px;
-    margin-top: 25px;
+#Main h1{
+	font-family: 'jakarta-bold', serif;
+	color: #FFFFFF;
+    font-size: 220px;
+    font-weight: 700;
+    line-height: 0.8em;
+    letter-spacing: -0.04em;
+	margin-top: 20px;
+	margin-left: -10px;
 }
 
-.ban .discover-btn{
-    font-size: 24px;
-    font-family: 'JakartaSemiBold', sans-serif;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    word-wrap: break-word;
-    width: 325px;
-    padding: 15px 10px;
-    background: linear-gradient(103deg, #4B5EFC 0%, #1740D1 100%);
-    border-radius: 15px;
-    justify-content: center;
+#Main .violet-div{
+	margin-top: 80px;
+	border-radius: 25px 25px 25px 25px;
+    padding-top: 35px;
+    padding-bottom: 41px;
+    padding-left: 40px;
+    padding-right: 40px;
+	background-color: transparent;
+    background-image: linear-gradient(93.17deg, #F886FF 0%, #7E2AFD 100%);
+}
+
+#Main h3{
+	font-family: 'jakarta-bold', serif;
+	color: #FFFFFF;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: -0.04em;
+}
+
+
+#Main .right-div{
+    padding-top: 35px;
+    padding-bottom: 41px;
+    padding-left: 60px;
+    padding-right: 40px;
+	margin-top: 50px;
+}
+
+#Main .right-div p{
+	color: #92939E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.62em;
+}
+
+#Main .right-div .started-btn{
+	user-select: none;
+    -moz-user-select: none;
+    background: #FFFFFF none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    color: #010314;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
-    border: none;
-    margin-right: 25px;
-    transition: transform 0.3s ease-in-out;
-    margin-top: 25px;
-}
-
-.ban .discover-btn:hover {
-    transform: scale(1.1); /* Optional hover effect */
-}
-
-.ban .learn-btn{
-    font-size: 24px;
-    font-family: 'JakartaSemiBold', sans-serif;
-    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.42px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 18px 45px;
     text-align: center;
-    font-weight: 600;
-    word-wrap: break-word;
-    width: 325px;
-    padding: 15px 10px;
-    background: #3A3D63;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    transition: transform 0.3s ease-in-out;
-    margin-top: 25px;
+    text-transform: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+	margin-top: 20px;
 }
 
-.ban .learn-btn:hover {
-    transform: scale(1.1); /* Optional hover effect */
+#Main .right-div .started-btn:hover{
+	color: #ffffff;
+	transition: 0.5s;
+	background: linear-gradient(82.3deg, #e275ff 10.8%, #5729d6 94.3%);
 }
 
 
+#Main .bg-1{
+	width: 500px;
+	height: auto;
+	position: absolute;
+	right: 100px;
+	top: -100px;
+}
 
-.ban .viking{
-    width: 120%;
-    margin-top: -60px;
+#Main .bg-2{
+	position: absolute;
+	width: 100px;
+	top: 350px;
+}
+
+#Main .bg-3{
+	width: 350px;
+	position: absolute;
+	right: 50px;
+	bottom: -120px;
+	animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 
 
+@media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
 
-@media (max-width: 650px) { 
-   
-    .ban-outer{
-        padding-top: 60px;
-        padding-bottom: 40px;
-        padding-left: 20px;
+ 
+    #Main{
+        padding-top: 80px;
+        padding-left: 30px;
         padding-right: 30px;
     }
 
-    .ban h1{
-        font-size: 50px;
-        line-height: 52px;
-    }
-
-    .ban p{
-        font-size: 16px;
-        line-height: 22px;
-        width: auto ;
-    }
-
-    .ban .discover-btn{
-        font-size: 16px;
-        width: 100%;
-        padding: 8px 4px;
-        border-radius: 10px;
-        margin-right: 0px;
-        
-    }
-
-    .ban .learn-btn{
-        font-size: 16px;
-        width: 100%;
-        padding: 8px 4px;
-        border-radius: 10px;
-        margin-right: 0px;
+    #Main h1{
+        font-size: 60px;
         margin-top: 10px;
     }
 
-    .ban .viking{
-        width: 100%;
-        margin-top: 30px;
+    #Main .violet-div{
+        margin-top: 15px;
+        width: 300px;
+        border-radius: 10px 10px 10px 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
- }
+    #Main h3{
+        font-size: 22px;
+    }
+
+    #Main .right-div{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+
+    #Main .right-div .started-btn{
+        margin-top: 10px;
+    }
+
+    #Main .bg-1{
+        width: 300px;
+        height: auto;
+        position: absolute;
+        right: -100px;
+        top: -50px;
+    }
+
+    #Main .bg-2{
+        position: absolute;
+        width: 80px;
+        top: 320px;
+        left: 0px;
+    }
+
+    #Main .bg-3{
+        width: 150px;
+        right: 0px;
+        bottom: -80px;
+    }
+
+  }

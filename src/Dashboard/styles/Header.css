@@ -1,0 +1,29 @@
+.toggleBtn{
+    display: none;
+  }
+  
+  .header-fixed {
+    background: #010314;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+  }
+  
+  .header-fixed h5 img{
+    height: 50px;
+    width: auto;
+  }
+
+
+  @media (max-width: 768px) {
+
+    .toggleBtn{
+      display: block;
+    }
+
+    .header-fixed h5 img{
+        margin-left: 20px;
+      }
+
+  }

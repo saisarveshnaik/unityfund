@@ -1,0 +1,229 @@
+/* App.css */
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+  
+  .content-area{
+   padding: 100px 50px 50px 300px;
+   background: #F7F1FC;
+  }
+
+  .bigbox{
+    padding: 20px;
+    background: linear-gradient(to right, #622FA2, #010314);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #ffffff;
+    min-height: 100%;
+  }
+
+  .bigbox h1{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .bigbox .profile-icon{
+    float: right;
+    margin-top: -30px;
+    font-size: 20px;
+  }
+
+  .bigbox .profile .profile-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+  }
+
+  .bigbox .profile h2{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .bigbox .earning-div{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #622FA2, #010314);
+    margin-top: 20px;
+  }
+
+  .bigbox .earning-div h2{
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .bigbox .earning-div h3{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .bigbox .referral-div{
+    padding: 10px 20px 10px 60px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #622FA2, #010314);
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .bigbox .referral-div button{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: none;
+  }
+
+  .bigbox .referral-div button svg{
+    font-size: 35px;
+    color: #ffffff;
+  }
+
+  .bigbox .referral-div h2{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .bigbox .referral-div h3{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .balance-div{
+    padding: 20px 20px 20px 80px;
+    background: linear-gradient(to bottom, #FEFDF4, #FEF7DB);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .balance-div svg{
+    font-size: 50px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .balance-div h2{
+   font-size: 14px;
+  }
+
+  .balance-div h3{
+    font-size: 22px;
+    font-weight: 600;
+   }
+
+
+   .balance-deposited-div{
+    padding: 20px 20px 20px 80px;
+    background: linear-gradient(to bottom, #FFFFFF, #FFFFFF);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .balance-deposited-div svg{
+    font-size: 50px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .balance-deposited-div h2{
+   font-size: 14px;
+  }
+
+  .balance-deposited-div h3{
+    font-size: 22px;
+    font-weight: 600;
+   }
+
+   .balance-deposited-div button{
+    float: right;
+    margin-top: -40px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, #622FA2, #010314);
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 160px;
+   }
+
+   .withdraw-div{
+    background: linear-gradient(to right, #D8E4F8, #D8E4F8);
+   }
+
+   .rank-div{
+    background: linear-gradient(to right, #BEE0D3, #BEE0D3);
+   }
+
+
+    .portfolio-div{
+      padding: 10px 20px 10px 20px;
+      color: #000000;
+      background: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-div svg{
+      font-size: 34px;
+    }
+
+    .portfolio-div h2{
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .portfolio-div h3{
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .green-div{
+      background: linear-gradient(to right, #CFE9E1, #B0D6C6);
+    }
+
+    .yellow-div{
+      background: linear-gradient(to bottom, #FEFDF4, #FEF7DB);
+    }
+
+
+  @media (max-width: 768px) {
+
+    .content-area{
+      padding: 100px 20px;
+     }
+
+     .balance-div{
+      margin-top: 20px;
+    }
+
+    .balance-deposited-div button{
+      float: none;
+      margin-top: 5px;
+     }
+
+    
+  }

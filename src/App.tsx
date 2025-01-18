@@ -8,6 +8,9 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 
+//IMPORTING DASHBOARD//
+import Dashboard from "./Dashboard/Dashboard";
+
 // LoaderWrapper component to handle the loader for route changes
 const LoaderWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +47,8 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+
+            <Route path="/dashboard/*" element={<Dashboard />} />
           </Routes>
         </LoaderWrapper>
     </Router>

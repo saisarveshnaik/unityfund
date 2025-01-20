@@ -26,7 +26,7 @@
 
 html, 
 body {
-	background: #010314;
+	background: var(--bg-color);
 	font-family: 'outfit-regular', serif;
 	scroll-behavior: smooth;
 	margin: 0!important;
@@ -60,10 +60,62 @@ a {
     padding-left: 0px;
   padding-right: 0px;
   }
+
+  .theme-toggler{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80px;
+  }
+
+}
+
+.theme-toggler{
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+
+.theme-toggler .sun{
+  position: absolute;
+  width: 40px;
+  left: 0px;
+  top: -14px;
+  cursor: pointer;
+}
+
+.theme-toggler .moon{
+  position: absolute;
+  width: 40px;
+  right: -10px;
+  top: -14px;
+  cursor: pointer;
 }
 
 
+  /* Dark mode */
+  [data-theme="dark"] {
+    --bg-color: #010314;
+    --header-bg: #0f101e;
+    --text-color: #FFFFFF;
+    --button-bg: #FFFFFF;
+    --client-bg: #010314;
+    --card-bg: #13141E;
+  }
+  
 
+  /* Default (light mode) */
+  [data-theme="light"] {
+    --bg-color: #FFFFFF;
+    --header-bg: #F8F9FA;
+    --text-color: #010314;
+    --button-bg: #007BFF;
+    --client-bg: #6C757D;
+    --card-bg: #F8F9FA;
+  }
+  
 
 
 

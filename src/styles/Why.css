@@ -1,5 +1,5 @@
 #Why{
-	padding-top: 20px;
+	padding-top: 80px;
 	padding-bottom: 100px;
 	position: relative;
 }
@@ -71,7 +71,7 @@
 }
 
 #Why h1{
-	color: #FFFFFF;
+	color: var(--text-color);
     font-family: "jakarta-bold", Sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -87,7 +87,7 @@
 }
 
 #Why .div1{
-	background-color: #13141E;
+	background-color: var(--card-bg);
 	border-radius: 25px 25px 25px 25px;
 	padding-top: 100px;
     padding-bottom: 100px;
@@ -96,6 +96,7 @@
 	margin-top: 50px;
 	min-height: 830px;
 	position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #Why .div1 img{
@@ -108,7 +109,7 @@
 
 #Why h3{
     font-family: "jakarta-bold", Sans-serif;
-	color: #FFFFFF;
+	color: var(--text-color);
     font-size: 45px;
     font-weight: 500;
     line-height: 1.2em;
@@ -127,8 +128,9 @@
 }
 
 #Why .div2{
-	background-color: #13141E;
+	background-color: var(--card-bg);
 	border-radius: 25px 25px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 65px;
@@ -145,8 +147,9 @@
 }
 
 #Why .div3{
-	background-color: #13141E;
+	background-color: var(--card-bg);
 	border-radius: 25px 25px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 65px;
@@ -172,7 +175,7 @@
     font-size: 18px !important;
     font-weight: 400 !important;
     line-height: 1.62em !important;
-    color: #ffffff !important;
+    color: var(--text-color) !important;
     margin-bottom: 10px !important;
 }
 

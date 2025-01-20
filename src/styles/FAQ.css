@@ -1,5 +1,6 @@
 #FAQ{
 	padding-bottom: 140px;
+    padding-top: 80px;
 }
 
 #FAQ h2 {
@@ -12,7 +13,7 @@
 }
 
 #FAQ h1 {
-    color: #FFFFFF;
+    color: var(--text-color);
     font-family: "jakarta-bold", Sans-serif;
     font-size: 50px;
     font-weight: 700;

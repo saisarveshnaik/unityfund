@@ -210,6 +210,38 @@
     }
 
 
+    .team-stats{
+      background: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 5px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .team-stats h2{
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .team-stats .item{
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     padding: 20px 5px;
+     margin-bottom: 5px;
+     margin-top: 10px;
+    }
+
+    .team-stats .item h3{
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .team-stats .item h4{
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+
   @media (max-width: 768px) {
 
     .content-area{

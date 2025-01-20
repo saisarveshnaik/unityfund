@@ -5,13 +5,13 @@
   }
 
   .navbar.scrolled {
-    background-color: #0f101e !important; /* New background color */
+    background-color: var(--header-bg) !important; /* New background color */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
     }
 
     .navbar{
       padding: 20px 120px;
-      background-color:#010314 !important;
+      background-color:var(--header-bg) !important;
       transition: background-color 0.3s ease-in-out;
     }
     
@@ -29,7 +29,7 @@
     }
 
     .navbar li button{
-      color: #ffffff !important;
+      color: var(--text-color) !important;
       font-weight: 600;
       margin-right: 50px;
       letter-spacing: 2px;
@@ -43,8 +43,8 @@
       font-size: 14px;
         display: flex;
         align-items: center;
-        background: #ffffff;
-        color: #010314;
+        background: var(--button-bg);
+        color: var(--bg-color);
         font-weight: 700;
         gap: 12px;
       padding: 14px 40px;

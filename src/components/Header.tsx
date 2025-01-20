@@ -1,9 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../styles/Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
 
 const Header: React.FC = () => {
+  
+  //Set theme of the website
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const toggleLight = () => {
+    setTheme((prevTheme) => (prevTheme = 'light' ));
+  };
+
+  const toggleDark = () => {
+    setTheme((prevTheme) => (prevTheme = 'dark' ));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,6 +76,12 @@ const Header: React.FC = () => {
             </button>
           </li>
         </ul>
+
+        <div className="theme-toggler">
+          <img src="light.svg" className="sun" alt="logo" onClick={toggleLight} />
+            <img src="dark.svg" className="moon" alt="logo" onClick={toggleDark} />
+          </div>
+
         <form className="form-inline my-2 my-lg-0">
           <Link to="/login" style={{ textDecoration: 'none' }}>
             <button className="join-btn mr-2">LOGIN</button>

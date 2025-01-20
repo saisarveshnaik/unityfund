@@ -16,7 +16,7 @@
 
 #Main h1{
 	font-family: 'jakarta-bold', serif;
-	color: #FFFFFF;
+	color: var(--text-color);
     font-size: 220px;
     font-weight: 700;
     line-height: 0.8em;
@@ -64,10 +64,10 @@
 #Main .right-div .started-btn{
 	user-select: none;
     -moz-user-select: none;
-    background: #FFFFFF none repeat scroll 0 0;
+    background: var(--button-bg) none repeat scroll 0 0;
     border: medium none;
     border-radius: 30px;
-    color: #010314;
+    color: var(--bg-color);
     cursor: pointer;
     display: inline-flex;
     align-items: center;

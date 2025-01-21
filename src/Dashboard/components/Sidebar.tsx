@@ -21,10 +21,11 @@ const Sidebar: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
       <div className={`text-white sidebar ${isVisible ? 'sidebar-visible' : 'sidebar-hidden'} d-md-block`}>
         <ul className="list-unstyled sidebar-content">
           <Link to='/dashboard' style={{ color: '#ffffff', textDecoration: 'none' }}><li><AiOutlineDashboard />Dashboard</li></Link>
-          <li><AiOutlineMoneyCollect />Subscription</li>
-          <li><AiOutlinePieChart />Portfolio</li>
-          <li><AiOutlineTrophy />Leaderboard</li>
-          <li><AiOutlineWallet />Wallet</li>
+          <Link to='/dashboard/subscription' style={{ color: '#ffffff', textDecoration: 'none' }}><li><AiOutlineMoneyCollect />Subscription</li></Link>
+          <Link to='/dashboard/portfolio' style={{ color: '#ffffff', textDecoration: 'none' }}><li><AiOutlinePieChart />Portfolio</li></Link>
+          <Link to='/dashboard/leaderboard' style={{ color: '#ffffff', textDecoration: 'none' }}><li><AiOutlineTrophy />Leaderboard</li></Link>
+          <Link to='/dashboard/wallet' style={{ color: '#ffffff', textDecoration: 'none' }}><li><AiOutlineWallet />Wallet</li></Link>
+          <Link to='/dashboard/withdrawal' style={{ color: '#ffffff', textDecoration: 'none' }}><li><AiOutlineWallet />Withdrawal</li></Link>
           <hr/>
           <li><AiOutlineTeam />View Team</li>
           <li><AiOutlineTransaction />Transactions</li>

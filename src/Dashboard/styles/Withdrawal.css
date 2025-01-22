@@ -1,0 +1,250 @@
+/* Custom Card Styles */
+.custom-card {
+    border-radius: 10px;
+    background-color: #ffffff; /* Solid background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Title */
+  .custom-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  /* Label Styling */
+  .custom-label {
+    color: #4e73df;
+    font-weight: 600;
+  }
+  
+  /* Select Styling */
+  .custom-select {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f9fc;
+    border: 1px solid #ddd;
+  }
+  
+  /* Balance Text Styling */
+  .custom-balance {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  /* Fee Styling */
+  .custom-fee {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f0ad4e;
+  }
+  
+  /* Button Styling */
+  .custom-btn {
+    background: #007bff; /* Solid button color */
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background: #0056b3; /* Darker button color on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Icon Styling */
+  .custom-btn .ml-2 {
+    font-size: 1.25rem;
+  }
+  
+
+  /* Custom Card Styles */
+.custom-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Title */
+  .custom-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  /* Table Styles */
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    text-align: left;
+    padding: 12px 15px;
+  }
+  
+  .custom-table thead {
+    background-color: #f8f9fc;
+    color: #343a40;
+  }
+  
+  .custom-table tbody tr:nth-child(odd) {
+    background-color: #f1f3f5;
+  }
+  
+  .custom-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .custom-table tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+  }
+  
+  /* Badge Styles */
+  .custom-badge {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+  }
+  
+  .custom-badge .mr-1 {
+    margin-right: 5px;
+  }
+  
+  .badge-warning {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .badge-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  /* Icons */
+  .custom-badge svg {
+    font-size: 1.2rem;
+  }
+  
+  /* Adjust padding and font weight for the table headers */
+  .custom-table th {
+    font-weight: 700;
+    color: #007bff;
+  }
+  
+
+  /* Custom Card Styles */
+.custom-card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Title */
+  .custom-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  /* List Item Styling */
+  .custom-list-item {
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: #f8f9fc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-list-item:hover {
+    background-color: #f1f3f5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-list-item .btn-danger {
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Button Styling */
+  .custom-remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .custom-add-btn {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .custom-add-btn:hover {
+    background-color: #218838;
+  }
+  
+  .custom-add-btn svg {
+    font-size: 1.25rem;
+  }
+  
+  /* Text Styling */
+  .custom-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Icon Styles */
+  .custom-list-item svg {
+    font-size: 1.3rem;
+  }
+  
+  .custom-add-btn svg {
+    font-size: 1.25rem;
+  }
+  

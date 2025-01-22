@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Header.css';
 import { FaBars } from 'react-icons/fa';
+import logo from './unityfund_logo.png';
 
 const Header: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
     return (
@@ -10,7 +11,7 @@ const Header: React.FC<{ toggleSidebar: () => void }> = ({ toggleSidebar }) => {
         <button className="btn btn-outline-light toggleBtn" onClick={toggleSidebar}>
           <FaBars size={20} />
         </button>
-        <h5 className="m-0"><img src='unityfund_logo.png' />Unityfund | Admin</h5>
+        <h5 className="m-0"><img src={logo} />Unityfund | Admin</h5>
       </header>
     );
   };

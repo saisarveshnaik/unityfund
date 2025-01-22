@@ -109,8 +109,16 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
     margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
   }
 
+  .balance-div:hover{
+    background: linear-gradient(to right, #622FA2, #010314);
+    color: #FFFFFF;
+  }
+
+ 
   .balance-div svg{
     font-size: 50px;
     position: absolute;
@@ -136,7 +144,15 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
     margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
   }
+
+  .balance-deposited-div:hover{
+    background: linear-gradient(to right, #622FA2, #010314);
+    color: #FFFFFF;
+  }
+
 
   .balance-deposited-div svg{
     font-size: 50px;
@@ -184,6 +200,13 @@
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       border-radius: 5px;
       margin-bottom: 10px;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .portfolio-div:hover{
+      background: linear-gradient(to right, #622FA2, #010314);
+      color: #FFFFFF;
     }
 
     .portfolio-div svg{
@@ -224,11 +247,13 @@
     }
 
     .team-stats .item{
+      background: linear-gradient(to right, #622FA2, #010314);
      border-radius: 5px;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
      padding: 20px 5px;
      margin-bottom: 5px;
      margin-top: 10px;
+     color: #FFFFFF;
     }
 
     .team-stats .item h3{

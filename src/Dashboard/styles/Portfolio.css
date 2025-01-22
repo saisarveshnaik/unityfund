@@ -1,0 +1,297 @@
+.investment-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investment-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .portfolio-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  }
+  
+  .portfolio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .portfolio-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-select-button {
+    padding: 10px;
+    height: 50px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #622FA2, #010314);
+    border: 2px solid #622FA2;
+    border-radius: 30px;
+  }
+  
+  .portfolio-select-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .investment-input-group {
+    margin-top: 20px;
+  }
+  
+  .investment-input {
+    max-width: 300px;
+  }
+  
+  .invest-button {
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  .portfolio-card.selected {
+    background: linear-gradient(to bottom, #622FA2, #010314);
+    color: white;
+    border: 2px solid #622FA2;
+  }
+
+
+
+  /* Card Styling */
+.roi-card {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .roi-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Styling */
+  .roi-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* List Styling */
+  .roi-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .roi-item {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .roi-item:hover {
+    color: #0d6efd;
+    transition: color 0.3s ease;
+  }
+  
+  .roi-icon {
+    font-size: 1.5rem;
+    color: #198754;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .roi-item:hover .roi-icon {
+    transform: rotate(20deg);
+    color: #0d6efd;
+  }
+  
+  /* Badge Styling */
+  .roi-badges {
+    margin-top: 20px;
+  }
+  
+  .roi-badge {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .roi-badge:first-child {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  
+  .roi-badge:last-child {
+    background-color: #212529;
+    color: #fff;
+  }
+  
+  .roi-badge:hover {
+    background-color: #198754;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+
+
+  /* Card Styling */
+.referral-card {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .referral-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Styling */
+  .referral-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Progress Bar Styling */
+  .referral-progress {
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+  .referral-progress-bar {
+    background: linear-gradient(to right, #ffc107, #ff9800);
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  /* Description Styling */
+  .referral-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .referral-link {
+    text-decoration: underline;
+    color: #0d6efd;
+    transition: color 0.3s ease;
+  }
+  
+  .referral-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+
+  /* Card Styling */
+.transaction-card {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .transaction-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Styling */
+  .transaction-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .transaction-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .transaction-btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Table Styling */
+  .transaction-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .transaction-table td {
+    color: #555;
+  }
+  
+  .transaction-table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Status Badge */
+  .badge-success {
+    background-color: #28a745;
+  }
+  
+  .badge-warning {
+    background-color: #ffc107;
+  }
+  
+  .transaction-table tbody tr td .badge {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .transaction-title {
+      font-size: 1.25rem;
+    }
+    .transaction-btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

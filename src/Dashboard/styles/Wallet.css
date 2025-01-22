@@ -1,0 +1,312 @@
+/* Deposit Funds Card Styling */
+.deposit-card {
+    background: linear-gradient(135deg, #f0f8ff, #ffffff);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .deposit-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Deposit Title Styling */
+  .deposit-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    display: flex;
+    align-items: center;
+  }
+  
+  .deposit-title .fa-arrow-circle-right {
+    font-size: 1.4rem;
+    color: #28a745;
+  }
+  
+  /* QR Code Styling */
+  .qr-code {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input Field and Copy Button Styling */
+  .deposit-input-group {
+    position: relative;
+  }
+  
+  .deposit-input {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+  
+  .copy-btn {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copy-btn:hover {
+    background-color: #218838;
+  }
+  
+  .copy-btn .fa-clipboard {
+    font-size: 1rem;
+  }
+  
+  /* Information Text Styling */
+  .deposit-info {
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .deposit-title {
+      font-size: 1.25rem;
+    }
+    .deposit-input-group {
+      flex-direction: column;
+    }
+    .deposit-input {
+      margin-bottom: 15px;
+    }
+    .deposit-info {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  /* Transaction History Card Styling */
+.transaction-card {
+    background: linear-gradient(135deg, #f5f9fc, #ffffff);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .transaction-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Transaction Title Styling */
+  .transaction-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .transaction-title .fa-history {
+    font-size: 1.4rem;
+    color: #28a745;
+  }
+  
+  /* Button Styling */
+  button {
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  /* Active Buttons */
+  button.btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.btn-outline-primary {
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  button.btn-outline-primary:hover {
+    border: 2px solid #0056b3;
+    color: #0056b3;
+  }
+  
+  /* Table Styling */
+  .transaction-table {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8f9fa;
+  }
+  
+  .transaction-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  .transaction-table td {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .transaction-table .badge {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  /* Badge Color Styling */
+  .transaction-table .badge-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .transaction-table .badge-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .transaction-title {
+      font-size: 1.4rem;
+    }
+    .transaction-table th, .transaction-table td {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+    .transaction-table .badge {
+      font-size: 0.75rem;
+    }
+    .mb-4 button {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  
+
+  /* Internal Transfer Card Styling */
+.internal-transfer-card {
+    background: linear-gradient(135deg, #e9f7f1, #ffffff);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .internal-transfer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Withdrawal Card Styling */
+  .withdrawal-card {
+    background: linear-gradient(135deg, #fff7f3, #ffffff);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .withdrawal-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .transfer-title, .withdrawal-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .transfer-title .fa-arrow-right,
+  .withdrawal-title .fa-money-bill-wave {
+    font-size: 1.4rem;
+    color: #28a745;
+  }
+  
+  /* Form Styling */
+  .form-group label {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .form-group input, .form-group select {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group input:focus, .form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Button Styling */
+  button {
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  /* Transfer Button */
+  button.btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Withdraw Button */
+  button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Full-Width Button */
+  button.btn-block {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .transfer-title, .withdrawal-title {
+      font-size: 1.4rem;
+    }
+    .form-group label {
+      font-size: 1rem;
+    }
+    .form-group input, .form-group select {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  

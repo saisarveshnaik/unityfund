@@ -1,0 +1,175 @@
+/* Leaderboard Card Styling */
+.leaderboard-card {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .leaderboard-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Leaderboard Title */
+  .leaderboard-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .timeframe-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .timeframe-btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .share-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .share-btn:hover {
+    background-color: #17a2b8;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Table Styling */
+  .leaderboard-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .leaderboard-table td {
+    color: #555;
+  }
+  
+  .leaderboard-table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Profile Image Styling */
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  /* Badge Styling for Ranks */
+  .badge-bronze {
+    background-color: #cd7f32;
+  }
+  
+  .badge-silver {
+    background-color: #c0c0c0;
+  }
+  
+  .badge-gold {
+    background-color: #ffd700;
+  }
+  
+  .badge-platinum {
+    background-color: #e5e4e2;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .leaderboard-title {
+      font-size: 1.25rem;
+    }
+    .timeframe-btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .share-btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  
+  /* Personal Ranking Card Styling */
+.ranking-card {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ranking-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ranking Title Styling */
+  .ranking-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ranking-title .fa-trophy {
+    font-size: 1.4rem;
+    color: #ffd700;
+  }
+  
+  /* Current Rank Text */
+  .current-rank {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  /* Progress Bar Styling */
+  .ranking-progress {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .ranking-progress .progress-bar {
+    border-radius: 10px;
+  }
+  
+  .ranking-progress .progress-bar.bg-success {
+    background-color: #28a745 !important;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  /* Rank Info Section */
+  .rank-info {
+    font-size: 1rem;
+  }
+  
+  .rank-info .fa-arrow-circle-up {
+    color: #28a745;
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .ranking-title {
+      font-size: 1.25rem;
+    }
+    .current-rank {
+      font-size: 1.1rem;
+    }
+    .ranking-progress {
+      height: 20px;
+    }
+  }
+  

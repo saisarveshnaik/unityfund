@@ -11,6 +11,17 @@ import Withdrawal from './pages/Withdrawal';
 
 const Dashboard: React.FC = () => {
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Check if token exists in localStorage
+    const token = localStorage.getItem('token');
+    if (!token) {
+      // Redirect to /login if token is not found
+      navigate('/login');
+    }
+  }, [navigate]);
+
   return (
     <div className="">
       <Routes>

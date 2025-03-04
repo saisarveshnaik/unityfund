@@ -8,6 +8,7 @@
 	outline: 0 !important;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'outfit-regular';
@@ -27,12 +28,11 @@
 html, 
 body {
 	background: var(--bg-color);
-	font-family: 'outfit-regular', serif;
+	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
 	margin: 0!important;
 	padding: 0!important;
     width: 100%;
-    font-smoothing:antialiased;
 }
 
 body{
@@ -55,7 +55,7 @@ a {
 
 @media (max-width: 650px) {          /*---------------MOBILEs-----------------*/
   .cont{
-    max-width: 100%;
+    max-width: 100vw;
     width: 100%;
     padding-left: 0px;
   padding-right: 0px;

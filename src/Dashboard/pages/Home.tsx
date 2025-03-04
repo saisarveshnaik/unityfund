@@ -7,6 +7,13 @@ import { AiOutlineProfile } from "react-icons/ai";
 import { AiOutlineCopy } from "react-icons/ai";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { AiFillProfile } from "react-icons/ai";
+import wallet from '../images/wallet.png';
+import cash from '../images/cash.png';
+import basket from '../images/basket.png';
+import tick from '../images/tick.png';
+import up from '../images/green-arrow.svg';
+import down from '../images/red-arrow.svg';
+import line from '../images/line.png';
 
 const Home: React.FC = () => {
     const [isSidebarVisible, setSidebarVisible] = React.useState(true); // Sidebar visible by default
@@ -21,8 +28,56 @@ const Home: React.FC = () => {
         <div className="d-flex content">
           <Sidebar isVisible={isSidebarVisible} />
           <main className="content-area">
+
             
             <div className='row'>
+              <div className='col-md-12'>
+                
+                <div className='statsdiv'>
+                <div className='row'>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={wallet} alt="wallet" className='mainIcon' />
+                    <h2>UnityFund Balance</h2>
+                    <h3>$159.15</h3>
+                    <h4><span className='greenText'><img src={up} alt="arrow" className='arrow' />37.8%</span> this month</h4>
+                    <img src={line} alt="line" className='statline' />
+                    </div>
+                  </div>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={cash} alt="cash" className='mainIcon' />
+                    <h2>Deposited in 24 hrs</h2>
+                    <h3>$334.15</h3>
+                    <h4><span className='redText'><img src={down} alt="arrow" className='arrow' />2%</span> this month</h4>
+                    <img src={line} alt="line" className='statline' />
+                    </div>
+                  </div>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={basket} alt="basket" className='mainIcon' />
+                    <h2>Withdrawal </h2>
+                    <h3>$66.15</h3>
+                    <h4><span className='greenText'><img src={up} alt="arrow" className='arrow' />25%</span> this month</h4>
+                    <img src={line} alt="line" className='statline' />
+                    </div>
+                  </div>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={tick} alt="tick" className='mainIcon' />
+                    <h2>Your Rank</h2>
+                    <h3>2234</h3>
+                    <h4><span className='redText'><img src={down} alt="arrow" className='arrow' />2%</span> this month</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+
+            
+            {/* <div className='row'>
               <div className='col-md-4'>
                 <div className='bigbox'>
                   <h1>Profile:</h1>
@@ -85,9 +140,63 @@ const Home: React.FC = () => {
                 <h3>Porftolio Earnings</h3>
                 </div>
               </div>
+            </div> */}
+
+
+            <div className='warningDiv text-center'>
+              <h2>Your account is not activated... Please subscribe <button className='subBtn'>Subscribe</button></h2>
             </div>
 
-            <div className='team-stats'>
+            
+            <div className='row'>
+              <div className='col-md-12'>
+                
+                <div className='statsdiv statsdiv2'>
+                <div className='row'>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={wallet} alt="wallet" className='mainIcon' />
+                    <h2>Total TEam</h2>
+                    <h3>55647</h3>
+                    <h4><span className='greenText'><img src={up} alt="arrow" className='arrow' />37.8%</span> this month</h4>
+                    <img src={line} alt="line" className='statline' />
+                    </div>
+                  </div>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={cash} alt="cash" className='mainIcon' />
+                    <h2>Active Team Members</h2>
+                    <h3>2234</h3>
+                    <h4><span className='redText'><img src={down} alt="arrow" className='arrow' />2%</span> this month</h4>
+                    <img src={line} alt="line" className='statline' />
+                    </div>
+                  </div>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={basket} alt="basket" className='mainIcon' />
+                    <h2>Direct Team Members </h2>
+                    <h3>334</h3>
+                    <h4><span className='greenText'><img src={up} alt="arrow" className='arrow' />25%</span> this month</h4>
+                    <img src={line} alt="line" className='statline' />
+                    </div>
+                  </div>
+                  <div className='col-md-3'>
+                    <div className='stats'>
+                    <img src={tick} alt="tick" className='mainIcon' />
+                    <h2>Team Rank</h2>
+                    <h3>4</h3>
+                    <h4><span className='redText'><img src={down} alt="arrow" className='arrow' />2%</span> this month</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+
+
+
+            {/* <div className='team-stats'>
               <h2>Team Stats</h2>
               <hr/>
               <div className='row'>
@@ -116,7 +225,7 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className='team-stats'>
               <h2>List of team</h2>

@@ -3,11 +3,15 @@
   }
   
   .header-fixed {
-    background: #010314;
+    background: #fafbff;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1050;
+  }
+
+  .header-fixed h5{
+    color: #9ea3bc;
   }
   
   .header-fixed h5 img{
@@ -20,6 +24,7 @@
 
     .toggleBtn{
       display: block;
+      color: #000000;
     }
 
     .header-fixed h5 img{
@@ -27,3 +32,146 @@
       }
 
   }
+
+  .header-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Logo styles */
+  .header-title .logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Profile Dropdown Container */
+  .profile-dropdown-container {
+    position: relative;
+  }
+  
+  /* Profile Information */
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Circular Profile Picture */
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Profile Text (name and level) */
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    font-size: 0.9rem;
+    color: #9ea3bc;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+  }
+  
+  .profile-level {
+    font-size: 0.8rem;
+  }
+  
+  /* Dropdown Arrow */
+  .dropdown-arrow {
+    margin-left: 8px;
+    color: #9ea3bc;
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    color: #000;
+    border: 1px solid #9EA3BC;
+    border-radius: 25px;
+    min-width: 200px;
+    padding: 10px;
+    /* Ensure there is no margin creating a gap */
+    margin-top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
+  }
+  
+  /* Dropdown Item Styles */
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-item .title {
+    font-weight: 500;
+  }
+  
+  .dropdown-item .value {
+    font-weight: bold;
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 576px) {
+    .header-fixed {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .profile-info {
+      margin-top: 10px;
+    }
+    .header-title {
+      font-size: 1rem;
+    }
+    .dropdown-menu {
+      right: 10px;
+      left: auto;
+      transform: none;
+    }
+  }
+  
+  /* Desktop view: adjust dropdown to open leftward if near right edge */
+  @media (min-width: 577px) {
+    .dropdown-menu {
+      right: 0;
+      left: auto;
+      /* transform: translateX(calc(-100% + 40px)); */
+      /* Adjust the 40px offset if needed based on your profile container width */
+    }
+  }
+  
+
+  .earningDiv{
+    border: 2px solid #9EA3BC;
+    border-radius: 25px;
+    padding: 10px;
+  }
+
+  .earningDiv h3{
+   font-size: 18px;
+   color: #9EA3BC;
+  }
+
+  .earningDiv h4{
+    font-size:22px;
+    text-align: center;
+    color: #9EA3BC;
+   }

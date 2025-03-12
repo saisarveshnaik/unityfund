@@ -109,22 +109,22 @@
 
   /* Card Styling */
 .subscription-card {
-	background: linear-gradient(135deg, #e3f2fd, #ffffff);
-	border-radius: 15px;
+	background: linear-gradient(135deg, #FFFFFF, #ffffff);
+	border-radius: 5px;
 	overflow: hidden;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .subscription-card:hover {
+  /* .subscription-card:hover {
 	transform: scale(1.03);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
+  } */
   
   /* Title Styling */
   .subscription-title {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #0d6efd;
+	color: #000000;
 	/* border-bottom: 2px solid #0d6efd; */
 	padding-bottom: 5px;
 	margin-bottom: 20px;
@@ -177,3 +177,39 @@
 	}
   }
   
+
+  .sub-step{
+	padding: 30px 20px 30px 20px;
+    color: #000000;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+	position: relative;
+  }
+
+  .sub-step h3{
+	font-size: 22px;
+	color: #acacac;
+  }
+
+  .sub-step h4{
+	font-size: 24px;
+	font-weight: 600;
+  }
+
+  .sub-step .subicon{
+	height: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+
+  .sub-step .arrow{
+	position: absolute;
+	width: 50px;
+	top: 50%;
+	right: -55px;
+	transform: translate(-50%,-50%);
+  }

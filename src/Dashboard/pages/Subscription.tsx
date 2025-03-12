@@ -3,6 +3,10 @@ import '../styles/Subscription.css';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import MyImage from './activation.jpg';
+import deposit from '../images/donate.png';
+import subscribe from '../images/subscribe.png';
+import growth from '../images/growth.png';
+import arrow from '../images/arrow.png';
 
 const Subscription: React.FC = () => {
     const [isSidebarVisible, setSidebarVisible] = React.useState<boolean>(true);
@@ -19,7 +23,7 @@ const Subscription: React.FC = () => {
                 <main className="content-area">
                     <div className="mt-4">
                         {/* Activation Overview */}
-                        <div className="card shadow-lg mb-4 border-0">
+                        <div className="card shadow-sm mb-4 border-0">
                             <div className="card-body">
 
                             <div className='row'>
@@ -45,11 +49,11 @@ const Subscription: React.FC = () => {
                           </div>
                           <div className='col-md-4 margin-bottom-20'>
                          {/* Activation Form */}
-                        <div className="card shadow-lg border-0 portfolio-div green-div" style={{ minHeight: '100%' }}>
+                        <div className="card shadow-sm border-0 portfolio-div green-div" style={{ minHeight: '100%' }}>
                             <div className="card-body">
-                                <h5 className="card-title text-primary subscription-title">Activation Form</h5>
+                                <h5 className="card-title subscription-title">Activation Form</h5>
                                 <p className="">Wallet Balance: <strong className="text-success">USDT (BEP20)</strong></p>
-                                <button className="btn btn-success btn-lg portfolio-select-button form-control">Activate</button>
+                                <button className="btn btn-lg portfolio-select-button form-control">Activate</button>
                                 <p className="mt-3">
                                     <small>By activating, you agree to the <a href="#" className="text-decoration-underline">terms and conditions</a>.</small>
                                 </p>
@@ -60,7 +64,7 @@ const Subscription: React.FC = () => {
                         {/* Subscription Status */}
                         <div className="card shadow-sm border-0 portfolio-div green-div" style={{ minHeight: '100%' }}>
                             <div className="card-body">
-                                <h5 className="card-title text-primary subscription-title">Subscription Status</h5>
+                                <h5 className="card-title subscription-title">Subscription Status</h5>
                                 <p>Status: <span className="badge badge-danger">Inactive</span></p>
                                 <p>Referral Count: <strong className="text-warning">0</strong></p>
                                 <p>Required Downline Balance: <strong className="text-info">$500</strong></p>
@@ -85,61 +89,55 @@ const Subscription: React.FC = () => {
 
 
 {/* Subscription Steps */}
-<div className="card subscription-card shadow-lg mb-4">
+<div className="card subscription-card shadow-sm mb-4">
   <div className="card-body">
     <h5 className="subscription-title">Subscription Steps</h5>
-    <div className="progress subscription-progress">
-      <div
-        className="progress-bar subscription-step progress-info"
-        role="progressbar"
-        style={{ width: '33%' }}
-        aria-valuenow={33}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        Step 1: Deposit Funds
-      </div>
-      <div
-        className="progress-bar subscription-step progress-success"
-        role="progressbar"
-        style={{ width: '33%' }}
-        aria-valuenow={66}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        Step 2: Activate Subscription
-      </div>
-      <div
-        className="progress-bar subscription-step progress-primary"
-        role="progressbar"
-        style={{ width: '34%' }}
-        aria-valuenow={100}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        Step 3: Start Investing
-      </div>
-    </div>
+
+
+    <div className='row'>
+        <div className='col-md-4'>
+            <div className='sub-step text-center'>
+                  <h3>Step 1</h3>
+                  <img src={deposit} className='subicon' />
+                  <img src={arrow} className='arrow' />
+                  <h4>Deposit Funds</h4>
+            </div>
+        </div>
+        <div className='col-md-4'>
+            <div className='sub-step text-center'>
+                  <h3>Step 2</h3>
+                  <img src={subscribe} className='subicon' />
+                  <img src={arrow} className='arrow' />
+                  <h4>Subscribe</h4>
+            </div>
+        </div>
+        <div className='col-md-4'>
+            <div className='sub-step text-center'>
+                  <h3>Step 3</h3>
+                  <img src={growth} className='subicon' />
+                  <h4>Start Investing</h4>
+            </div>
+        </div>
+     </div>
+
   </div>
 </div>
 
-                        
+<div className='team-stats shadow-sm'>
+              <h2>Rank Details</h2>
+              <hr/>
 
-
-                        {/* Rank Details Section */}
-                        <div className="card shadow-lg border-0">
-                            <div className="card-body">
-                                <h5 className="card-title text-primary roi-title">Rank Details</h5>
-                                <table className="table table-striped">
-                                    <thead className="thead-light">
-                                        <tr>
+              <div className="table-responsive">
+              <table className="table">
+              <thead>
+              <tr>
                                             <th>Rank</th>
                                             <th>Criteria</th>
                                             <th>Gap Income Eligibility</th>
                                         </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
+  </thead>
+  <tbody>
+  <tr>
                                             <td>Jade</td>
                                             <td>$1,000 Downline Volume</td>
                                             <td>5%</td>
@@ -154,10 +152,13 @@ const Subscription: React.FC = () => {
                                             <td>$10,000 Downline Volume</td>
                                             <td>15%</td>
                                         </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+</tbody>
+              </table>
+              </div>
+              
+            </div>
+
+
                     </div>
                 </main>
             </div>

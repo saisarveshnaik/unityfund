@@ -24,21 +24,26 @@ const Leaderboard: React.FC = () => {
                 <main className="content-area">
                     <div className="mt-4">
 
-                        {/* Leaderboard Display */}
-                        <div className="card leaderboard-card shadow-lg mb-4 border-0">
-      <div className="card-body">
-        <h5 className="card-title leaderboard-title">Leaderboard</h5>
 
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <div>
-            <button className="btn btn-sm btn-primary timeframe-btn">Weekly</button>
-            <button className="btn btn-sm btn-outline-primary timeframe-btn ml-2">Monthly</button>
-          </div>
-          <button className="btn btn-outline-info btn-sm share-btn">Share</button>
+
+                    <div className="card transaction-card shadow-sm mb-4">
+      <div className="card-body">
+        <h5 className="transaction-title">Leaderboard</h5>
+
+        {/* Buttons (No interactivity for now) */}
+        <div className="d-flex mb-3">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
+            Weekly
+          </button>
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
+            Monthly
+          </button>
         </div>
 
-        <table className="table leaderboard-table table-hover">
-          <thead className="thead-light">
+        {/* Placeholder Table Display */}
+        <div id="transaction-table">
+          <table className="table transaction-table">
+            <thead className="thead-light">
             <tr>
               <th>#</th>
               <th>Profile</th>
@@ -46,14 +51,14 @@ const Leaderboard: React.FC = () => {
               <th>Rank</th>
               <th>Total Earnings</th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             {[...Array(10)].map((_, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>
                   <img
-                    src={`https://via.placeholder.com/40`}
+                    src={`https://ui-avatars.com/api/?name=John+Doe&background=random`}
                     alt="Profile"
                     className="rounded-circle profile-img"
                   />
@@ -63,13 +68,16 @@ const Leaderboard: React.FC = () => {
                 <td>${(1000 * (index + 1)).toLocaleString()}</td>
               </tr>
             ))}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
+ 
+
                         {/* Personal Ranking */}
-                        <div className="card ranking-card shadow-lg mb-4 border-0">
+                        <div className="card shadow-sm mb-4 border-0">
       <div className="card-body">
         <h5 className="card-title ranking-title">
           <FaTrophy className="mr-2" />

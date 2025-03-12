@@ -22,40 +22,43 @@ const Wallet: React.FC = () => {
                 <main className="content-area">
                     <div className=" mt-4">
 
-                                                <div className="card shadow-lg mb-4 border-0">
-                                                <div className="card-body">
-                        
-                                                <h5 className="card-title text-primary subscription-title">Wallet Balance</h5>
-                        
-                                                    <div className='row'>
-                                                        <div className='col-md-4'>
-                                                    <div className='portfolio-div text-center green-div'>
-                                                                    <AiFillDollarCircle />
-                                                                    <h2>$0.00</h2>
-                                                                    <h3>Total Balance</h3>
-                                                                    </div>
-                                                        </div>
-                                                        <div className='col-md-4'>
-                                                    <div className='portfolio-div text-center yellow-div'>
-                                                                    <AiFillDollarCircle />
-                                                                    <h2>$0.00</h2>
-                                                                    <h3>Available Balance</h3>
-                                                                    </div>
-                                                        </div>
-                                                        <div className='col-md-4'>
-                                                    <div className='portfolio-div text-center green-div'>
-                                                                    <AiFillDollarCircle />
-                                                                    <h2>$0.00</h2>
-                                                                    <h3>Locked Balance</h3>
-                                                                    </div>
-                                                        </div>
-                                                    </div>
-                        
-                                                 </div>
-                                                 </div>   
+
+                    <div className="card shadow-sm mb-4 border-0">
+                        <div className="card-body">
+
+                        <h5 className="card-title subscription-title">Wallet Balance</h5>
+
+                            <div className='row'>
+                                <div className='col-md-4'>
+                            <div className='portfolio-div text-center green-div'>
+                            <h3 className='mt-3'>Total Balance</h3>
+                                            <h2>$0.00</h2>
+                                            
+                                            </div>
+                                </div>
+                                <div className='col-md-4'>
+                            <div className='portfolio-div text-center green-div'>
+                            <h3 className='mt-3'>Available Balance</h3>
+                                            <h2>$0.00</h2>
+                                            
+                                            </div>
+                                </div>
+                                <div className='col-md-4'>
+                            <div className='portfolio-div text-center green-div'>
+                            <h3 className='mt-3'>Locked Balance</h3>
+                                            <h2>$0.00</h2>
+                                           
+                                            </div>
+                                </div>
+                            </div>
+
+                         </div>
+                         </div>   
+
+  
 
 
-                                                 <div className="card deposit-card shadow-lg mb-4 border-0">
+                                                 <div className="card shadow-sm mb-4 border-0">
       <div className="card-body">
         <h5 className="card-title deposit-title">
           <FaArrowCircleRight className="mr-2" />
@@ -88,7 +91,7 @@ const Wallet: React.FC = () => {
     </div>
 
                         {/* Transaction History */}
-                        <div className="card transaction-card shadow-lg mb-4 border-0">
+                        <div className="card transaction-card shadow-sm mb-4 border-0">
       <div className="card-body">
         <h5 className="card-title subscription-title">
           <FaHistory className="mr-2" />
@@ -96,15 +99,15 @@ const Wallet: React.FC = () => {
         </h5>
 
         <div className="mb-4">
-          <button className="btn btn-sm btn-primary mr-2">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
             <FaArrowDown className="mr-1" />
             Deposits
           </button>
-          <button className="btn btn-sm btn-outline-primary mr-2">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
             <FaArrowUp className="mr-1" />
             Withdrawals
           </button>
-          <button className="btn btn-sm btn-outline-primary">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
             <FaSyncAlt className="mr-1" />
             Internal Transfers
           </button>
@@ -147,7 +150,7 @@ const Wallet: React.FC = () => {
     <div className="row">
       {/* Internal Transfer Section */}
       <div className="col-md-6">
-        <div className="card internal-transfer-card shadow-sm mb-4 border-0">
+        <div className="card shadow-sm mb-4 border-0">
           <div className="card-body">
             <h5 className="card-title transfer-title">
               <FaArrowRight className="mr-2" />
@@ -184,7 +187,7 @@ const Wallet: React.FC = () => {
 
       {/* Withdrawal Section */}
       <div className="col-md-6">
-        <div className="card withdrawal-card shadow-sm mb-4 border-0">
+        <div className="card shadow-sm mb-4 border-0">
           <div className="card-body">
             <h5 className="card-title withdrawal-title">
               <FaMoneyBillWave className="mr-2" />

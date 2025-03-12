@@ -28,31 +28,31 @@ const Portfolio: React.FC = () => {
                     <div className="mt-4">
                         
 
-                        <div className="card shadow-lg mb-4 border-0">
+                        <div className="card shadow-sm mb-4 border-0">
                         <div className="card-body">
 
-                        <h5 className="card-title text-primary subscription-title">Portfolio Summary</h5>
+                        <h5 className="card-title subscription-title">Portfolio Summary</h5>
 
                             <div className='row'>
                                 <div className='col-md-4'>
                             <div className='portfolio-div text-center green-div'>
-                                            <AiFillDollarCircle />
+                            <h3 className='mt-3'>Total investment amount</h3>
                                             <h2>$0.00</h2>
-                                            <h3>Total investment amount</h3>
-                                            </div>
-                                </div>
-                                <div className='col-md-4'>
-                            <div className='portfolio-div text-center yellow-div'>
-                                            <AiFillDollarCircle />
-                                            <h2>$0.00</h2>
-                                            <h3>ROI breakdown</h3>
+                                            
                                             </div>
                                 </div>
                                 <div className='col-md-4'>
                             <div className='portfolio-div text-center green-div'>
-                                            <AiFillDollarCircle />
+                            <h3 className='mt-3'>ROI breakdown</h3>
                                             <h2>$0.00</h2>
-                                            <h3>Withdrawable balance</h3>
+                                            
+                                            </div>
+                                </div>
+                                <div className='col-md-4'>
+                            <div className='portfolio-div text-center green-div'>
+                            <h3 className='mt-3'>Withdrawable balance</h3>
+                                            <h2>$0.00</h2>
+                                           
                                             </div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@ const Portfolio: React.FC = () => {
 
 
 {/* ROI Distribution View */}
-<div className="card roi-card shadow-lg mb-4">
+<div className="card  shadow-sm mb-4">
   <div className="card-body">
     <h5 className="subscription-title">ROI Distribution</h5>
     <ul className="roi-list">
@@ -152,15 +152,15 @@ const Portfolio: React.FC = () => {
       </li>
     </ul>
     <div className="roi-badges">
-      <span className="badge badge-primary roi-badge mr-2">Profit Timeline</span>
-      <span className="badge badge-dark roi-badge">Upline Tree View</span>
+      <span className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">Profit Timeline</span>
+      <span className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">Upline Tree View</span>
     </div>
   </div>
 </div>
 
 
 {/* Direct Referral Requirement Widget */}
-<div className="card referral-card shadow-lg mb-4">
+<div className="card shadow-sm mb-4">
   <div className="card-body">
     <h5 className="subscription-title">Direct Referral Requirement</h5>
     <div className="progress referral-progress">
@@ -184,27 +184,27 @@ const Portfolio: React.FC = () => {
 
 
                         {/* Transaction History */}
-                        <div className="card transaction-card shadow-lg mb-4">
+                        <div className="card transaction-card shadow-sm mb-4">
       <div className="card-body">
         <h5 className="transaction-title">Transaction History</h5>
 
         {/* Buttons (No interactivity for now) */}
         <div className="d-flex mb-3">
-          <button className="btn btn-outline-primary btn-sm mr-2 transaction-btn">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
             Deposits
           </button>
-          <button className="btn btn-outline-primary btn-sm mr-2 transaction-btn">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
             Investments
           </button>
-          <button className="btn btn-outline-primary btn-sm transaction-btn">
+          <button className="btn btn-success ml-2 portfolio-select-button pl-5 pr-5">
             Earnings
           </button>
         </div>
 
         {/* Placeholder Table Display */}
         <div id="transaction-table">
-          <table className="table transaction-table table-striped">
-            <thead className="thead-light">
+          <table className="table transaction-table">
+            <thead>
               <tr>
                 <th>Date</th>
                 <th>Type</th>

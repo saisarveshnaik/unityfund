@@ -62,7 +62,8 @@
   }
   
   .sidebar-content li:hover {
-    background: linear-gradient(to left, #622FA2, #010314);
+    background: linear-gradient(to left, #633bea, #633bea);
+    color: #FFFFFF !important;
   }
   
   .sidebar-content .dropdown-toggle:hover {

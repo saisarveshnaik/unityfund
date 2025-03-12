@@ -216,10 +216,10 @@
       cursor: pointer;
     }
 
-    .portfolio-div:hover{
+    /* .portfolio-div:hover{
       background: linear-gradient(to right, #622FA2, #010314);
       color: #FFFFFF;
-    }
+    } */
 
     .portfolio-div svg{
       font-size: 34px;
@@ -237,7 +237,7 @@
     }
 
     .green-div{
-      background: linear-gradient(to right, #CFE9E1, #B0D6C6);
+      background: linear-gradient(to right, #FFFFFF, #FFFFFF);
     }
 
     .yellow-div{

@@ -23,9 +23,9 @@ const Withdrawal: React.FC = () => {
 
                         
                         {/* Withdrawal Form */}
-                        <div className="card mb-4 shadow-lg border-0 custom-card">
+                        <div className="card mb-4 shadow-sm border-0 custom-card">
       <div className="card-body">
-        <h5 className="card-title text-primary custom-title">Withdrawal Form</h5>
+        <h5 className="card-title custom-title">Withdrawal Form</h5>
         <div className="form-group">
           <label htmlFor="withdrawalType" className="custom-label">
             Withdrawal Type
@@ -48,10 +48,10 @@ const Withdrawal: React.FC = () => {
     </div>
 
                         {/* Withdrawal Processing */}
-                        <div className="card mb-4 shadow-lg border-0 custom-card">
+                        <div className="card mb-4 shadow-sm border-0 custom-card">
       <div className="card-body">
-        <h5 className="card-title text-primary custom-title">Withdrawal Processing</h5>
-        <table className="table custom-table">
+        <h5 className="card-title custom-title">Withdrawal Processing</h5>
+        <table className="table ">
           <thead>
             <tr>
               <th>Date</th>
@@ -87,13 +87,13 @@ const Withdrawal: React.FC = () => {
     </div>
 
                         {/* Bank/Wallet Linking */}
-                        <div className="card mb-4 shadow-lg border-0 custom-card">
+                        <div className="card mb-4 shadow-sm border-0 custom-card">
       <div className="card-body">
-        <h5 className="card-title text-primary custom-title">Bank/Wallet Linking</h5>
+        <h5 className="card-title custom-title">Bank/Wallet Linking</h5>
         <ul className="list-group mb-3">
           <li className="list-group-item d-flex justify-content-between align-items-center custom-list-item">
             <div className="d-flex align-items-center">
-              <FaWallet className="mr-2 text-primary" />
+              <FaWallet className="mr-2 " />
               <span>Wallet Address 1</span>
             </div>
             <button className="btn btn-sm btn-danger custom-remove-btn">
@@ -102,7 +102,7 @@ const Withdrawal: React.FC = () => {
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center custom-list-item">
             <div className="d-flex align-items-center">
-              <FaWallet className="mr-2 text-primary" />
+              <FaWallet className="mr-2 " />
               <span>Wallet Address 2</span>
             </div>
             <button className="btn btn-sm btn-danger custom-remove-btn">
@@ -110,7 +110,7 @@ const Withdrawal: React.FC = () => {
             </button>
           </li>
         </ul>
-        <button className="btn btn-success custom-add-btn">
+        <button className="btn  custom-add-btn">
           <FaWallet className="mr-2" /> Add New Address
         </button>
         <p className="text-muted mt-2 custom-text">
